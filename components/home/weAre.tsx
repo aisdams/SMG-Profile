@@ -4,7 +4,7 @@ export default function weAre() {
   return (
     <div className="h-screen">
       <div
-        className="flex px-40"
+        className="flex px-40 h-28"
         style={{
           backgroundImage: `url(${MapWeAre.src})`,
           backgroundRepeat: 'no-repeat',
