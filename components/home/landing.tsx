@@ -3,9 +3,9 @@ import { Autoplay, EffectFade } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Image from 'next/image';
-import Bg1 from 'public/landing/1.svg';
-import Bg2 from 'public/landing/2.svg';
-import Bg3 from 'public/landing/3.svg';
+import Bg1 from 'public/landing/1.png';
+import Bg2 from 'public/landing/2.png';
+import Bg3 from 'public/landing/3.png';
 
 import 'swiper/css';
 import 'swiper/css/effect-fade';
@@ -14,7 +14,7 @@ const slides = [
   {
     title: 'EKSPEDISI 1 KOTA 1 HARGA',
     desc: 'LinkExpress memberikan tarif flat untuk setiap kabupaten dan kota meskipun ada',
-    desc2: 'ada perbedaan jarak yang signifikan antar kecamatan',
+    desc2: 'perbedaan jarak yang signifikan antar kecamatan',
     image: Bg1,
   },
   {
@@ -56,10 +56,10 @@ export default function landing() {
               priority
               style={{
                 width: '100%',
+                height: '100%',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                height: '100%',
                 objectFit: 'cover',
                 filter: 'brightness(0.8)',
               }}
@@ -67,20 +67,15 @@ export default function landing() {
 
             <div className="absolute inset-0 mx-auto grid min-h-[30rem] w-[min(90%,1280px)] place-items-center text-white pb-10">
               <div className="flex flex-col cursor-default">
-                <span className="text-3xl font-bold text-center">
+                <span className="lg:text-[40px] mobileL:text-[26px] mobileM:text-[20px] mobileS:text-[18px] font-bold text-center">
                   <p className="drop-shadow-lg shadow-black">
                     PT. Logistik Indonesia Network
                   </p>
                 </span>
-                <span
-                  className="text-[88px] font-bold text-center"
-                  style={{
-                    lineHeight: '98px',
-                  }}
-                >
+                <span className="xl:text-[88px] lg:text-[70px] mobileL:text-[48px] mobileL:mt-5 mobileM:text-[34px] mobileM:mt-4 mobileS:text-[26px] mobileS:mt-3 font-bold text-center leading-none">
                   <p className="drop-shadow-lg shadow-black">{slide.title}</p>
                 </span>
-                <span className="text-[24px] text-center text-md">
+                <span className="xl:text-[24px] lg:text-[20px] mobileL:text-[20px] mobileL:mt-5 mobileM:text-[18px] mobileM:mt-4 mobileS:text-[16px] mobileS:mt-3 text-center">
                   <p className="drop-shadow-lg shadow-black">{slide.desc}</p>
                   <p className="drop-shadow-lg shadow-black">{slide.desc2}</p>
                 </span>
@@ -89,7 +84,7 @@ export default function landing() {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="absolute z-[1] inset-0 mx-auto flex min-h-[30rem] w-[650px] place-items-center text-white pt-[18rem]">
+      {/* <div className="absolute z-[1] inset-0 mx-auto flex min-h-[30rem] w-[650px] place-items-center text-white pt-[18rem]">
         <input
           type="text"
           placeholder="Cari Resi"
@@ -107,7 +102,7 @@ export default function landing() {
         <button className="py-[0.6rem] px-5 bg-white text-[1.2rem] text-black font-semibold">
           LACAK
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }
