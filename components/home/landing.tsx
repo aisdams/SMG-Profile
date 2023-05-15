@@ -84,25 +84,14 @@ export default function landing() {
           </SwiperSlide>
         ))}
       </Swiper>
-      {/* <div className="absolute z-[1] inset-0 mx-auto flex min-h-[30rem] w-[650px] place-items-center text-white pt-[18rem]">
-        <input
-          type="text"
-          placeholder="Cari Resi"
-          style={{
-            width: '100%',
-            padding: '0.6rem',
-            fontSize: '1.2rem',
-            color: 'black',
-            background: 'white',
-            opacity: '0.5',
-            border: 'none',
-            outline: 'none',
-          }}
-        />
-        <button className="py-[0.6rem] px-5 bg-white text-[1.2rem] text-black font-semibold">
-          LACAK
+      <div className="absolute z-[1] inset-0 mx-auto flex justify-center xl:mt-[320px] xl:gap-6 lg:mt-[300px] lg:gap-4 md:mt-[280px] md:gap-3 mobileL:mt-[380px] mobileL:gap-3 mobileM:mt-[330px] place-items-center text-white">
+        <button className="py-[0.6rem] px-10 rounded-full bg-[#1abbdb] text-[1.2rem] text-white border-white font-semibold">
+          About Us
         </button>
-      </div> */}
+        <button className="py-[0.6rem] px-10 rounded-full bg-[#1abbdb] text-[1.2rem] text-white border-white font-semibold">
+          Contact
+        </button>
+      </div>
     </div>
   );
 }
