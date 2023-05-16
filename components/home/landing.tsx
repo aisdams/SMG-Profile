@@ -84,11 +84,11 @@ export default function landing() {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="absolute z-[1] inset-0 mx-auto flex justify-center xl:mt-[320px] xl:gap-6 lg:mt-[300px] lg:gap-4 md:mt-[280px] md:gap-3 mobileL:mt-[380px] mobileL:gap-3 mobileM:mt-[330px] place-items-center text-white">
-        <button className="py-[0.6rem] px-10 rounded-full bg-[#1abbdb] text-[1.2rem] text-white border-white font-semibold">
+      <div className="absolute z-[1] inset-0 mx-auto flex justify-center xl:mt-[320px] xl:gap-6 lg:mt-[300px] lg:gap-4 md:mt-[280px] md:gap-3 mobileL:mt-[380px] mobileL:gap-3 mobileM:mt-[330px] mobileM:gap-2 mobileS:mt-[300px] mobileS:gap-2 place-items-center text-white">
+        <button className="py-[0.6rem] px-10 rounded-full bg-[#1abbdb] text-[1.2rem] mobileS:text-[1rem] text-white border-white font-semibold">
           About Us
         </button>
-        <button className="py-[0.6rem] px-10 rounded-full bg-[#1abbdb] text-[1.2rem] text-white border-white font-semibold">
+        <button className="py-[0.6rem] px-10 rounded-full bg-[#1abbdb] text-[1.2rem] mobileS:text-[1rem] text-white border-white font-semibold">
           Contact
         </button>
       </div>

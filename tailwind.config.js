@@ -22,6 +22,13 @@ module.exports = {
       lg: '1024px',
       xl: '1280px',
     },
+    backgroundSize: {
+      auto: 'auto',
+      cover: 'cover',
+      contain: 'contain',
+      '50%': '50%',
+      16: '4rem',
+    },
   },
   plugins: [],
 };
