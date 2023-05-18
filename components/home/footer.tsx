@@ -2,19 +2,38 @@ import Image from 'next/image';
 
 import Bg1 from 'public/footer/1.png';
 import Bg2 from 'public/footer/2.png';
+import Bg3 from 'public/footer/3.png';
 
 export default function FooterHome() {
   return (
     <div className="mt-20 bg-[#eeeeee]">
-      <div>
+      <div className="relative">
         <Image
           src={Bg1}
           alt="Picture of the author"
           style={{
             width: '100%',
-            height: '100%',
+            height: '500px',
+            objectFit: 'cover',
           }}
         />
+        <div className="absolute top-[7rem] left-0 right-0 bottom-0 flex justify-center items-center">
+          <div className="text-md font-bold text-white text-center">
+            <div className="flex bg-[#1abbdb] text-white px-5 py-2 rounded-full cursor-pointer">
+              Hubungi Kami
+              <Image
+                src={Bg3}
+                alt="Picture of the author"
+                style={{
+                  width: '25px',
+                  height: '25px',
+                }}
+                className="mx-2"
+              />
+              0858-1055-8522
+            </div>
+          </div>
+        </div>
       </div>
       <div className="py-10 px-10 xl:px-40 lg:px-28">
         <div className="flex xl:flex-row lg:flex-row mobileL:flex-col mobileM:flex-col mobileS:flex-col justify-around">
