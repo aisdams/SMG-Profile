@@ -82,7 +82,7 @@ export default function Fee() {
                   ? 'Ketik minimal 1 karakter'
                   : `Keyword "${inputValue}" tidak ditemukan`
               }
-              getOptionLabel={(option) => `${option.destination}`}
+              getOptionLabel={(option: any) => `${option.destination}`}
               isClearable
               placeholder="Kota Asal"
               classNamePrefix="react-select"
@@ -102,7 +102,7 @@ export default function Fee() {
                   ? 'Ketik minimal 1 karakter'
                   : `Keyword "${inputValue}" tidak ditemukan`
               }
-              getOptionLabel={(option) => `${option.destination}`}
+              getOptionLabel={(option: any) => `${option.destination}`}
               isClearable
               placeholder="Kota Tujuan"
               classNamePrefix="react-select"
