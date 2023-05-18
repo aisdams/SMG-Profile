@@ -16,8 +16,12 @@
     "incremental": true,
     "paths": {
       "@/*": ["./*"],
+      "@apis/*": ["./apis/*"],
       "@components/*": ["./components/*"],
-    }
+    },
+    "types": [
+      "node"
+    ]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]

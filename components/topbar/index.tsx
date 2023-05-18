@@ -60,47 +60,47 @@ export default function Topbar() {
                 isActive === '/service' && 'border-b-4 border-[#1abbdb]'
               )}
             >
-              <Link href="/about">
+              <Link href="/service">
                 <span>Service</span>
               </Link>
             </div>
             <div
               className={classNames(
                 'flex items-center font-semibold h-full mx-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
-                isActive === '/service' && 'border-b-4 border-[#1abbdb]'
+                isActive === '/fee' && 'border-b-4 border-[#1abbdb]'
               )}
             >
-              <Link href="/about">
+              <Link href="/fee">
                 <span>Cek Ongkir</span>
               </Link>
             </div>
             <div
               className={classNames(
                 'flex items-center font-semibold h-full mx-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
-                isActive === '/service' && 'border-b-4 border-[#1abbdb]'
+                isActive === '/tracking' && 'border-b-4 border-[#1abbdb]'
               )}
             >
-              <Link href="/about">
+              <Link href="/tracking">
                 <span>Tracking</span>
               </Link>
             </div>
             <div
               className={classNames(
                 'flex items-center font-semibold h-full mx-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
-                isActive === '/service' && 'border-b-4 border-[#1abbdb]'
+                isActive === '/kemitraan' && 'border-b-4 border-[#1abbdb]'
               )}
             >
-              <Link href="/about">
+              <Link href="/kemitraan">
                 <span>Kemitraan</span>
               </Link>
             </div>
             <div
               className={classNames(
                 'flex items-center font-semibold h-full mx-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
-                isActive === '/service' && 'border-b-4 border-[#1abbdb]'
+                isActive === '/contact' && 'border-b-4 border-[#1abbdb]'
               )}
             >
-              <Link href="/about">
+              <Link href="/contact">
                 <span>Contact</span>
               </Link>
             </div>

@@ -31,7 +31,14 @@ export default function About() {
         />
         <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center">
           <div className="text-white text-7xl font-bold">
-            <p className="drop-shadow-2xl shadow-black">About Us</p>
+            <p
+              className=""
+              style={{
+                textShadow: '0px 8px 4px rgba(0, 0, 0, 0.25)',
+              }}
+            >
+              About Us
+            </p>
           </div>
         </div>
       </div>

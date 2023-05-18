@@ -16,9 +16,9 @@ export default function Footer() {
           height: '100%',
         }}
       />
-      <div className="bg-[#1abbdb] px-[8rem]">
-        <div className="flex justify-between py-12 text-white">
-          <div className="flex flex-col">
+      <div className="bg-[#1abbdb] px-[1rem] md:px-[2rem] lg:px-[5rem] xl:px-[7rem]">
+        <div className="flex flex-col items-center md:flex-row justify-between py-12 text-white">
+          <div className="flex flex-col text-center md:text-left">
             <div className="font-semibold">
               DAPATKAN RESPON CEPAT DARI TIM KAMI
             </div>
@@ -26,7 +26,7 @@ export default function Footer() {
               JANGAN RAGU MENGHUBUNGI KAMI
             </div>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center mt-5 md:mt-0">
             <div className="flex items-center border-2 text-xl rounded-full py-3 px-6 font-bold cursor-pointer hover:bg-white hover:text-[#1abbdb]">
               <Image
                 src={Bg3}
