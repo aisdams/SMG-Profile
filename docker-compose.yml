@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  linkx-profile:
+    build:
+      #context: ../../
+      dockerfile: Dockerfile
+    image: linkx-profile
+    container_name: linkx-profile
+    ports:
+      - '7007:7007'
