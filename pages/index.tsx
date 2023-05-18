@@ -3,6 +3,7 @@ import WeAre from '@components/home/weAre';
 import WeOffer from '@components/home/weOffer';
 import UsSpecial from '@components/home/usSpecial';
 import CustomerSay from '@components/home/customerSay';
+import FooterHome from '@/components/home/footer';
 
 // import Image from 'next/image';
 // import { Inter } from 'next/font/google'
@@ -16,6 +17,7 @@ export default function Home() {
       <WeOffer />
       <UsSpecial />
       <CustomerSay />
+      <FooterHome />
     </div>
   );
 }
