@@ -32,7 +32,7 @@ const slides = [
   },
 ];
 
-export default function landing() {
+export default function Landing() {
   return (
     <div className="relative h-screen overflow-hidden animate-fade-right">
       <Swiper

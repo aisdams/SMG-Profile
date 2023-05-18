@@ -34,7 +34,7 @@ const data = [
   },
 ];
 
-export default function usSpecial() {
+export default function UsSpecial() {
   return (
     <div className="mt-10 px-10 xl:px-40 lg:px-28 animate-fade-right">
       <div className="text-4xl font-bold">What Make Us Special?</div>

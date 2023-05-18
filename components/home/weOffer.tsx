@@ -7,7 +7,7 @@ import Bg4 from 'public/weOffer/4.png';
 import Bg5 from 'public/weOffer/5.png';
 import Bg6 from 'public/weOffer/6.png';
 
-export default function weOffer() {
+export default function WeOffer() {
   return (
     <div className="h-full bg-[#1abbdb]">
       <div className="py-16 px-10 xl:px-40 lg:px-28">

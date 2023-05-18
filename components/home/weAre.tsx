@@ -2,13 +2,11 @@ import Image from 'next/image';
 import MapWeAre from 'public/weAre/map.png';
 import LinkexIcon from 'public/weAre/linkex_icon.png';
 
-export default function weAre() {
+export default function WeAre() {
   return (
     <>
       <div className="mt-10 px-10 xl:px-40 lg:px-28">
-        <div className="w-full">
-          <div className="text-4xl font-bold">Who We Are?</div>
-        </div>
+        <div className="text-4xl font-bold">Who We Are?</div>
         <div className="flex">
           <div className="w-full xl:w-5/12">
             <div className="text-base font-semibold mt-5 relative xl:w-[700px] z-[1]">

@@ -2,6 +2,7 @@ import Landing from '@components/home/landing';
 import WeAre from '@components/home/weAre';
 import WeOffer from '@components/home/weOffer';
 import UsSpecial from '@components/home/usSpecial';
+import CustomerSay from '@components/home/customerSay';
 
 // import Image from 'next/image';
 // import { Inter } from 'next/font/google'
@@ -14,6 +15,7 @@ export default function Home() {
       <WeAre />
       <WeOffer />
       <UsSpecial />
+      <CustomerSay />
     </div>
   );
 }
