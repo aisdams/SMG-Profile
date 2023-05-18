@@ -34,7 +34,7 @@ const slides = [
 
 export default function landing() {
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div className="relative h-screen overflow-hidden animate-fade-right">
       <Swiper
         modules={[Autoplay, EffectFade]}
         className="h-full"
