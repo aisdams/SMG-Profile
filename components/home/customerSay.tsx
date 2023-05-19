@@ -60,6 +60,7 @@ export default function CustomerSay() {
                   >
                     <Image
                       src="https://mdbcdn.b-cdn.net/img/new/avatars/8.jpg"
+                      priority
                       className="w-full"
                       alt="Sample photo"
                       width={300}
@@ -95,6 +96,7 @@ export default function CustomerSay() {
                   >
                     <Image
                       src="https://mdbcdn.b-cdn.net/img/new/avatars/8.jpg"
+                      priority
                       className="w-full"
                       alt="Sample photo"
                       width={300}
@@ -130,6 +132,7 @@ export default function CustomerSay() {
                   >
                     <Image
                       src="https://mdbcdn.b-cdn.net/img/new/avatars/8.jpg"
+                      priority
                       className="w-full"
                       alt="Sample photo"
                       width={300}
@@ -165,6 +168,7 @@ export default function CustomerSay() {
                   >
                     <Image
                       src="https://mdbcdn.b-cdn.net/img/new/avatars/8.jpg"
+                      priority
                       className="w-full"
                       alt="Sample photo"
                       width={300}
@@ -200,6 +204,7 @@ export default function CustomerSay() {
                   >
                     <Image
                       src="https://mdbcdn.b-cdn.net/img/new/avatars/8.jpg"
+                      priority
                       className="w-full"
                       alt="Sample photo"
                       width={300}

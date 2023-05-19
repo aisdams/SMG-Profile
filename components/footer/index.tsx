@@ -9,8 +9,8 @@ export default function Footer() {
     <div className="">
       <Image
         src={Bg4}
-        alt="Picture of the author"
         priority
+        alt="Picture of the author"
         style={{
           width: '100%',
           height: '100%',
@@ -30,6 +30,7 @@ export default function Footer() {
             <div className="flex items-center border-2 text-xl rounded-full py-3 px-6 font-bold cursor-pointer hover:bg-white hover:text-[#1abbdb]">
               <Image
                 src={Bg3}
+                priority
                 alt="Picture of the author"
                 style={{
                   width: '25px',
@@ -47,6 +48,7 @@ export default function Footer() {
           <div className="w-full">
             <Image
               src={Bg2}
+              priority
               alt="Picture of the author"
               style={{
                 width: '150px',

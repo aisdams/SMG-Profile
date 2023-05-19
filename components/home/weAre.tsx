@@ -24,6 +24,7 @@ export default function WeAre() {
               <div className="flex">
                 <Image
                   src={LinkexIcon}
+                  priority
                   alt="Picture of the author"
                   style={{
                     width: '40px',
@@ -44,6 +45,7 @@ export default function WeAre() {
               <div className="flex">
                 <Image
                   src={LinkexIcon}
+                  priority
                   alt="Picture of the author"
                   style={{
                     width: '40px',
@@ -65,6 +67,7 @@ export default function WeAre() {
               <div className="flex">
                 <Image
                   src={LinkexIcon}
+                  priority
                   alt="Picture of the author"
                   style={{
                     width: '40px',
@@ -85,6 +88,7 @@ export default function WeAre() {
               <div className="flex">
                 <Image
                   src={LinkexIcon}
+                  priority
                   alt="Picture of the author"
                   style={{
                     width: '40px',
@@ -109,6 +113,7 @@ export default function WeAre() {
           <div className="hidden xl:w-7/12 xl:block">
             <Image
               src={MapWeAre}
+              priority
               alt="Picture of the author"
               style={{
                 width: '100%',

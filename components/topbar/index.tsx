@@ -23,7 +23,12 @@ export default function Topbar() {
           paddingInline: '5%',
         }}
       >
-        <div className="flex justify-between bg-white shadow-xl">
+        <div
+          className="flex justify-between bg-white"
+          style={{
+            boxShadow: '0px 15px 10px -15px #111',
+          }}
+        >
           <Image
             src={Bg1}
             alt="Picture of the author"

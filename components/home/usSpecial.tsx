@@ -58,6 +58,7 @@ export default function UsSpecial() {
               />
               <Image
                 src={item.img}
+                priority
                 alt="Picture of the author"
                 style={{
                   width: '300px',

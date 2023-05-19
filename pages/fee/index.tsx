@@ -46,6 +46,7 @@ export default function Fee() {
         />
         <Image
           src={Bg1}
+          priority
           alt="Picture of the author"
           width="0"
           height="0"
@@ -112,7 +113,7 @@ export default function Fee() {
             <input
               ref={searchRef}
               type="text"
-              placeholder="Berat (gram)"
+              placeholder="Berat (KG)"
               className="w-full h-full border-2 border-gray-300 rounded-md px-3 py-2 outline-none"
             />
           </div>

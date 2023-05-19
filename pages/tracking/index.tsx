@@ -60,6 +60,7 @@ export default function Tracking() {
         />
         <Image
           src={Bg1}
+          priority
           alt="Picture of the author"
           width="0"
           height="0"

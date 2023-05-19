@@ -10,6 +10,7 @@ export default function FooterHome() {
       <div className="relative">
         <Image
           src={Bg1}
+          priority
           alt="Picture of the author"
           style={{
             width: '100%',
@@ -23,6 +24,7 @@ export default function FooterHome() {
               Hubungi Kami
               <Image
                 src={Bg3}
+                priority
                 alt="Picture of the author"
                 style={{
                   width: '25px',
@@ -40,6 +42,7 @@ export default function FooterHome() {
           <div className="w-full">
             <Image
               src={Bg2}
+              priority
               alt="Picture of the author"
               style={{
                 width: '150px',

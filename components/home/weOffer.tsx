@@ -16,6 +16,7 @@ export default function WeOffer() {
           <div className="flex flex-col">
             <Image
               src={Bg1}
+              priority
               alt="Picture of the author"
               style={{
                 width: '100%',
@@ -37,6 +38,7 @@ export default function WeOffer() {
           <div className="flex flex-col">
             <Image
               src={Bg2}
+              priority
               alt="Picture of the author"
               style={{
                 width: '100%',
@@ -57,6 +59,7 @@ export default function WeOffer() {
           <div className="flex flex-col">
             <Image
               src={Bg3}
+              priority
               alt="Picture of the author"
               style={{
                 width: '100%',
@@ -78,6 +81,7 @@ export default function WeOffer() {
           <div className="flex flex-col">
             <Image
               src={Bg4}
+              priority
               alt="Picture of the author"
               style={{
                 width: '100%',
@@ -99,6 +103,7 @@ export default function WeOffer() {
           <div className="flex flex-col">
             <Image
               src={Bg5}
+              priority
               alt="Picture of the author"
               style={{
                 width: '100%',
@@ -119,6 +124,7 @@ export default function WeOffer() {
           <div className="flex flex-col">
             <Image
               src={Bg6}
+              priority
               alt="Picture of the author"
               style={{
                 width: '100%',

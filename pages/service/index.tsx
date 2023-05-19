@@ -64,6 +64,7 @@ export default function Service() {
         />
         <Image
           src={Bg1}
+          priority
           alt="Picture of the author"
           width="0"
           height="0"
@@ -130,6 +131,7 @@ export default function Service() {
                 >
                   <Image
                     src={item.image}
+                    priority
                     className="w-full"
                     alt="Sample photo"
                     width={300}

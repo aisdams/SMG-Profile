@@ -52,8 +52,8 @@ export default function Landing() {
           <SwiperSlide key={index} className="relative overflow-hidden">
             <Image
               src={slide.image}
-              alt="Picture of the author"
               priority
+              alt="Picture of the author"
               style={{
                 width: '100%',
                 height: '100%',
