@@ -75,7 +75,7 @@ export default function About() {
           kompetitif melalui tagline kami Satu Kota Satu Harga.
         </div>
         <div className="flex mt-5 text-xl justify-between relative">
-          <div className="font-semibold w-full xl:w-5/12 lg:5/12 md:5/12">
+          <div className="font-semibold w-full lg:w-5/12">
             Kami juga akan terus mengembangkan layanan LinkExpress berbasis
             platform teknologi, sehingga menjadikan bisnis logistik akan semakin
             mudah dan terbuka untuk semua pelaku usaha. Dengan pengembangan

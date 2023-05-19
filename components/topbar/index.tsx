@@ -3,6 +3,7 @@ import Link from 'next/link';
 import classNames from 'classnames';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
+import { HiMenu } from 'react-icons/hi';
 
 import Bg1 from 'public/topbar/1.png';
 
@@ -17,12 +18,7 @@ export default function Topbar() {
 
   return (
     <div className="fixed right-0 z-[2] w-full">
-      <div
-        className="pt-10"
-        style={{
-          paddingInline: '5%',
-        }}
-      >
+      <div className="pt-0 lg:pt-10 lg:ps-10 lg:pe-10">
         <div
           className="flex justify-between bg-white"
           style={{
@@ -37,11 +33,10 @@ export default function Topbar() {
             className="pl-3 m-2 object-contain cursor-pointer"
             priority
           />
-
-          <div className="flex">
+          <div className="hidden lg:flex">
             <div
               className={classNames(
-                'flex items-center font-semibold h-full mx-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
+                'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
                 isActive === '/' && 'border-b-4 border-[#1abbdb]'
               )}
             >
@@ -51,7 +46,7 @@ export default function Topbar() {
             </div>
             <div
               className={classNames(
-                'flex items-center font-semibold h-full mx-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
+                'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
                 isActive === '/about' && 'border-b-4 border-[#1abbdb]'
               )}
             >
@@ -61,7 +56,7 @@ export default function Topbar() {
             </div>
             <div
               className={classNames(
-                'flex items-center font-semibold h-full mx-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
+                'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
                 isActive === '/service' && 'border-b-4 border-[#1abbdb]'
               )}
             >
@@ -71,7 +66,7 @@ export default function Topbar() {
             </div>
             <div
               className={classNames(
-                'flex items-center font-semibold h-full mx-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
+                'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
                 isActive === '/fee' && 'border-b-4 border-[#1abbdb]'
               )}
             >
@@ -81,7 +76,7 @@ export default function Topbar() {
             </div>
             <div
               className={classNames(
-                'flex items-center font-semibold h-full mx-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
+                'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
                 isActive === '/tracking' && 'border-b-4 border-[#1abbdb]'
               )}
             >
@@ -91,7 +86,7 @@ export default function Topbar() {
             </div>
             <div
               className={classNames(
-                'flex items-center font-semibold h-full mx-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
+                'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
                 isActive === '/kemitraan' && 'border-b-4 border-[#1abbdb]'
               )}
             >
@@ -101,13 +96,18 @@ export default function Topbar() {
             </div>
             <div
               className={classNames(
-                'flex items-center font-semibold h-full mx-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
+                'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
                 isActive === '/contact' && 'border-b-4 border-[#1abbdb]'
               )}
             >
               <Link href="/contact">
                 <span>Contact</span>
               </Link>
+            </div>
+          </div>
+          <div className="flex lg:hidden">
+            <div className="flex items-center pr-3">
+              <HiMenu size={30} />
             </div>
           </div>
         </div>
