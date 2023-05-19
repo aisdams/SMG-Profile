@@ -2,7 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import classNames from 'classnames';
 import { useRouter } from 'next/router';
-import { useState, useEffect } from 'react';
+import { Menu, Transition } from '@headlessui/react';
+import { Fragment, useEffect, useRef, useState } from 'react';
 import { HiMenu } from 'react-icons/hi';
 
 import Bg1 from 'public/topbar/1.png';
@@ -106,8 +107,134 @@ export default function Topbar() {
             </Link>
           </div>
           <div className="flex lg:hidden">
-            <div className="flex items-center pr-3">
+            {/* <div className="flex items-center pr-3">
               <HiMenu size={30} />
+            </div> */}
+            <div className="flex items-center pr-3">
+              <Menu as="div" className="flex">
+                <Menu.Button className="inline-flex w-full justify-center bg-opacity-20 text-sm font-medium  hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+                  <HiMenu size={30} />
+                </Menu.Button>
+                <Transition
+                  as={Fragment}
+                  enter="transition ease-out duration-100"
+                  enterFrom="transform opacity-0 scale-95"
+                  enterTo="transform opacity-100 scale-100"
+                  leave="transition ease-in duration-75"
+                  leaveFrom="transform opacity-100 scale-100"
+                  leaveTo="transform opacity-0 scale-95"
+                >
+                  <Menu.Items className="absolute right-0 mt-10 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    <div className="px-1 py-1 ">
+                      <Menu.Item>
+                        {() => (
+                          <Link href="/">
+                            <span
+                              className={`${
+                                isActive === '/'
+                                  ? 'bg-[#1abbdb] text-white'
+                                  : 'text-gray-900'
+                              } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                            >
+                              Home
+                            </span>
+                          </Link>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {() => (
+                          <Link href="/about">
+                            <span
+                              className={`${
+                                isActive === '/about'
+                                  ? 'bg-violet-500 text-white'
+                                  : 'text-gray-900'
+                              } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                            >
+                              About Us
+                            </span>
+                          </Link>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {() => (
+                          <Link href="/service">
+                            <span
+                              className={`${
+                                isActive === '/service'
+                                  ? 'bg-violet-500 text-white'
+                                  : 'text-gray-900'
+                              } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                            >
+                              Service
+                            </span>
+                          </Link>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {() => (
+                          <Link href="/fee">
+                            <span
+                              className={`${
+                                isActive === '/fee'
+                                  ? 'bg-violet-500 text-white'
+                                  : 'text-gray-900'
+                              } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                            >
+                              Cek Ongkir
+                            </span>
+                          </Link>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {() => (
+                          <Link href="/tracking">
+                            <span
+                              className={`${
+                                isActive === '/tracking'
+                                  ? 'bg-violet-500 text-white'
+                                  : 'text-gray-900'
+                              } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                            >
+                              Tracking
+                            </span>
+                          </Link>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {() => (
+                          <Link href="/kemitraan">
+                            <span
+                              className={`${
+                                isActive === '/kemitraan'
+                                  ? 'bg-violet-500 text-white'
+                                  : 'text-gray-900'
+                              } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                            >
+                              Kemitraan
+                            </span>
+                          </Link>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {() => (
+                          <Link href="/contact">
+                            <span
+                              className={`${
+                                isActive === '/contact'
+                                  ? 'bg-violet-500 text-white'
+                                  : 'text-gray-900'
+                              } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                            >
+                              Contact
+                            </span>
+                          </Link>
+                        )}
+                      </Menu.Item>
+                    </div>
+                  </Menu.Items>
+                </Transition>
+              </Menu>
             </div>
           </div>
         </div>

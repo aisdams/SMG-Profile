@@ -99,54 +99,56 @@ export default function Tracking() {
             </button>
           </div>
         </div>
-        <div className="mt-20 overflow-auto">
-          <table className="table-auto w-full overscroll-auto	">
-            <thead>
-              <tr>
-                <th className="border border-gray-300 px-5 py-2">No.</th>
-                <th className="border border-gray-300 px-5 py-2">Tanggal</th>
-                <th className="border border-gray-300 px-5 py-2">Pengirim</th>
-                <th className="border border-gray-300 px-5 py-2">Tujuan</th>
-                <th className="border border-gray-300 px-5 py-2">Penerima</th>
-                <th className="border border-gray-300 px-5 py-2">Service</th>
-                <th className="border border-gray-300 px-5 py-2">Status</th>
-                <th className="border border-gray-300 px-5 py-2">Detail</th>
-              </tr>
-            </thead>
-            <tbody>
-              {data.map((item: any, index: number) => (
-                <tr key={index} className="hover:bg-gray-100">
-                  <td className="border border-gray-300 px-5 py-2 text-center">
-                    {index + 1}
-                  </td>
-                  <td className="border border-gray-300 px-5 py-2 text-center">
-                    {dateYearMonthFormat(item.p_date)}
-                  </td>
-                  <td className="border border-gray-300 px-5 py-2 text-center">
-                    {item.p_shipper_name}
-                  </td>
-                  <td className="border border-gray-300 px-5 py-2 text-center">
-                    {item.destination}
-                  </td>
-                  <td className="border border-gray-300 px-5 py-2 text-center">
-                    {item.p_consignee_name}
-                  </td>
-                  <td className="border border-gray-300 px-5 py-2 text-center">
-                    {item.p_product}
-                  </td>
-                  <td className="border border-gray-300 px-5 py-2 text-center">
-                    {item.status}
-                  </td>
-                  <td className="border border-gray-300 px-5 py-2 text-center">
-                    <button className="bg-[#1abbdb] text-white px-5 py-2 rounded-md">
-                      Detail
-                    </button>
-                  </td>
+        {data.length > 0 && (
+          <div className="mt-20 overflow-auto">
+            <table className="table-auto w-full overscroll-auto	">
+              <thead>
+                <tr>
+                  <th className="border border-gray-300 px-5 py-2">No.</th>
+                  <th className="border border-gray-300 px-5 py-2">Tanggal</th>
+                  <th className="border border-gray-300 px-5 py-2">Pengirim</th>
+                  <th className="border border-gray-300 px-5 py-2">Tujuan</th>
+                  <th className="border border-gray-300 px-5 py-2">Penerima</th>
+                  <th className="border border-gray-300 px-5 py-2">Service</th>
+                  <th className="border border-gray-300 px-5 py-2">Status</th>
+                  <th className="border border-gray-300 px-5 py-2">Detail</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+              </thead>
+              <tbody>
+                {data.map((item: any, index: number) => (
+                  <tr key={index} className="hover:bg-gray-100">
+                    <td className="border border-gray-300 px-5 py-2 text-center">
+                      {index + 1}
+                    </td>
+                    <td className="border border-gray-300 px-5 py-2 text-center">
+                      {dateYearMonthFormat(item.p_date)}
+                    </td>
+                    <td className="border border-gray-300 px-5 py-2 text-center">
+                      {item.p_shipper_name}
+                    </td>
+                    <td className="border border-gray-300 px-5 py-2 text-center">
+                      {item.destination}
+                    </td>
+                    <td className="border border-gray-300 px-5 py-2 text-center">
+                      {item.p_consignee_name}
+                    </td>
+                    <td className="border border-gray-300 px-5 py-2 text-center">
+                      {item.p_product}
+                    </td>
+                    <td className="border border-gray-300 px-5 py-2 text-center">
+                      {item.status}
+                    </td>
+                    <td className="border border-gray-300 px-5 py-2 text-center">
+                      <button className="bg-[#1abbdb] text-white px-5 py-2 rounded-md">
+                        Detail
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
       </div>
 
       <Footer />
