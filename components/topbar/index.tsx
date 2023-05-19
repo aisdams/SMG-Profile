@@ -34,76 +34,76 @@ export default function Topbar() {
             priority
           />
           <div className="hidden lg:flex">
-            <div
-              className={classNames(
-                'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
-                isActive === '/' && 'border-b-4 border-[#1abbdb]'
-              )}
-            >
-              <Link href="/">
+            <Link href="/">
+              <div
+                className={classNames(
+                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
+                  isActive === '/' && 'border-b-4 border-[#1abbdb]'
+                )}
+              >
                 <span>Home</span>
-              </Link>
-            </div>
-            <div
-              className={classNames(
-                'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
-                isActive === '/about' && 'border-b-4 border-[#1abbdb]'
-              )}
-            >
-              <Link href="/about">
+              </div>
+            </Link>
+            <Link href="/about">
+              <div
+                className={classNames(
+                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
+                  isActive === '/about' && 'border-b-4 border-[#1abbdb]'
+                )}
+              >
                 <span>About Us</span>
-              </Link>
-            </div>
-            <div
-              className={classNames(
-                'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
-                isActive === '/service' && 'border-b-4 border-[#1abbdb]'
-              )}
-            >
-              <Link href="/service">
+              </div>
+            </Link>
+            <Link href="/service">
+              <div
+                className={classNames(
+                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
+                  isActive === '/service' && 'border-b-4 border-[#1abbdb]'
+                )}
+              >
                 <span>Service</span>
-              </Link>
-            </div>
-            <div
-              className={classNames(
-                'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
-                isActive === '/fee' && 'border-b-4 border-[#1abbdb]'
-              )}
-            >
-              <Link href="/fee">
+              </div>
+            </Link>
+            <Link href="/fee">
+              <div
+                className={classNames(
+                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
+                  isActive === '/fee' && 'border-b-4 border-[#1abbdb]'
+                )}
+              >
                 <span>Cek Ongkir</span>
-              </Link>
-            </div>
-            <div
-              className={classNames(
-                'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
-                isActive === '/tracking' && 'border-b-4 border-[#1abbdb]'
-              )}
-            >
-              <Link href="/tracking">
+              </div>
+            </Link>
+            <Link href="/tracking">
+              <div
+                className={classNames(
+                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
+                  isActive === '/tracking' && 'border-b-4 border-[#1abbdb]'
+                )}
+              >
                 <span>Tracking</span>
-              </Link>
-            </div>
-            <div
-              className={classNames(
-                'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
-                isActive === '/kemitraan' && 'border-b-4 border-[#1abbdb]'
-              )}
-            >
-              <Link href="/kemitraan">
+              </div>
+            </Link>
+            <Link href="/kemitraan">
+              <div
+                className={classNames(
+                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
+                  isActive === '/kemitraan' && 'border-b-4 border-[#1abbdb]'
+                )}
+              >
                 <span>Kemitraan</span>
-              </Link>
-            </div>
-            <div
-              className={classNames(
-                'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
-                isActive === '/contact' && 'border-b-4 border-[#1abbdb]'
-              )}
-            >
-              <Link href="/contact">
+              </div>
+            </Link>
+            <Link href="/contact">
+              <div
+                className={classNames(
+                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
+                  isActive === '/contact' && 'border-b-4 border-[#1abbdb]'
+                )}
+              >
                 <span>Contact</span>
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
           <div className="flex lg:hidden">
             <div className="flex items-center pr-3">

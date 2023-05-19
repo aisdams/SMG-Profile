@@ -83,7 +83,7 @@ export default function Tracking() {
       </div>
       <div className="my-20 px-10 xl:px-40 lg:px-28">
         <div className="flex justify-center">
-          <div className="flex text-2xl">
+          <div className="flex flex-col font-semibold md:flex-row md:text-2xl">
             <input
               type="text"
               placeholder="No. Resi"
@@ -92,14 +92,14 @@ export default function Tracking() {
               onKeyDown={enterField}
             />
             <button
-              className="bg-[#1abbdb] text-white px-5 py-2 rounded-md ml-5"
+              className="bg-[#1abbdb] text-white px-5 py-2 rounded-md mt-5 md:mt-0 md:ml-5"
               onClick={handleSearchResi}
             >
               LACAK
             </button>
           </div>
         </div>
-        <div className="mt-20">
+        <div className="mt-20 overflow-auto">
           <table className="table-auto w-full overscroll-auto	">
             <thead>
               <tr>

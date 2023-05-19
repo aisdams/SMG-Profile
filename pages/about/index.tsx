@@ -140,7 +140,7 @@ export default function About() {
                     </div>
                   )}
                   {item === 'Link GO!' && (
-                    <div className="flex flex-col">
+                    <div className="flex flex-col mt-10">
                       <Image
                         src={Bg5}
                         priority

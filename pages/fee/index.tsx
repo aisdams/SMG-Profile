@@ -1,9 +1,10 @@
 import { useRef, useState, useCallback } from 'react';
 import { getCoverageAreaByDestination } from '@/apis/coverage';
 import { useMutation, useQuery } from '@tanstack/react-query';
-import { format } from 'date-fns';
+import { format, set } from 'date-fns';
 import { id } from 'date-fns/locale';
 import Select from 'react-select';
+import AsyncSelect from 'react-select/async';
 
 import Image from 'next/image';
 import Bg1 from 'public/fee/1.png';
@@ -13,8 +14,9 @@ import Footer from '@components/footer';
 export const dateYearMonthFormat = (date: string) =>
   format(new Date(date), 'yyyy-MM-dd', { locale: id });
 
-export default function Fee() {
-  const searchRef = useRef<HTMLInputElement>(null);
+export default function FeeX() {
+  const selectRef1 = useRef(null);
+  const selectRef2 = useRef(null);
 
   const [cityInputValue, setCityInputValue] = useState('');
   const citiesQuery = useQuery(
@@ -29,6 +31,29 @@ export default function Fee() {
       },
     }
   );
+
+  const filterColors = (inputValue: string) => {
+    setCityInputValue(inputValue);
+    return citiesQuery.data?.filter((i: any) =>
+      i.destination.toLowerCase().includes(inputValue.toLowerCase())
+    );
+  };
+
+  const loadOptions = (
+    inputValue: string,
+    callback: (options: any) => void
+  ) => {
+    setTimeout(() => {
+      callback(filterColors(inputValue));
+    }, 1000);
+  };
+
+  const handleCekOngkir = () => {
+    console.log('cek ongkir');
+    console.log(selectRef1);
+    console.log(selectRef2);
+    // console.log();
+  };
 
   return (
     <div className="">
@@ -70,48 +95,37 @@ export default function Fee() {
       <div className="my-20 px-10 xl:px-40 lg:px-28">
         <div className="flex flex-col items-center text-xl">
           <div className="w-[600px] bg-red-100">
-            <Select
-              options={citiesQuery.data}
-              isLoading={citiesQuery.isLoading}
-              // onInputChange={onInputChange}
-              // value={}
-              // getOptionValue={(option) =>
-              //   'uniqueField' ? option['uniqueField'] : option.value
-              // }
-              noOptionsMessage={({ inputValue }) =>
-                inputValue.length < 1
-                  ? 'Ketik minimal 1 karakter'
-                  : `Keyword "${inputValue}" tidak ditemukan`
-              }
-              getOptionLabel={(option: any) => `${option.destination}`}
-              isClearable
+            <AsyncSelect
+              instanceId={1}
+              cacheOptions
+              loadOptions={loadOptions}
+              defaultOptions
               placeholder="Kota Asal"
-              classNamePrefix="react-select"
+              value={citiesQuery.data?.find(
+                (option: any) => option['destination'] === cityInputValue
+              )}
+              getOptionLabel={(option: any) => `${option.destination}`}
+              getOptionValue={(option: any) => `${option.destination}`}
+              ref={selectRef1}
             />
           </div>
           <div className="w-[600px] bg-red-100 mt-5">
-            <Select
-              options={citiesQuery.data}
-              isLoading={citiesQuery.isLoading}
-              // onInputChange={onInputChange}
-              // value={}
-              // getOptionValue={(option) =>
-              //   'uniqueField' ? option['uniqueField'] : option.value
-              // }
-              noOptionsMessage={({ inputValue }) =>
-                inputValue.length < 1
-                  ? 'Ketik minimal 1 karakter'
-                  : `Keyword "${inputValue}" tidak ditemukan`
-              }
+            <AsyncSelect
+              instanceId={2}
+              cacheOptions
+              loadOptions={loadOptions}
+              defaultOptions
+              placeholder="Kota Asal"
+              value={citiesQuery.data?.find(
+                (option: any) => option['destination'] === cityInputValue
+              )}
               getOptionLabel={(option: any) => `${option.destination}`}
-              isClearable
-              placeholder="Kota Tujuan"
-              classNamePrefix="react-select"
+              getOptionValue={(option: any) => `${option.destination}`}
+              ref={selectRef2}
             />
           </div>
           <div className="w-[600px] bg-red-100 mt-5">
             <input
-              ref={searchRef}
               type="text"
               placeholder="Berat (KG)"
               className="w-full h-full border-2 border-gray-300 rounded-md px-3 py-2 outline-none"
@@ -135,7 +149,10 @@ export default function Fee() {
             />
           </div>
           <div>
-            <button className="bg-red-500 text-white px-10 py-2 rounded-md mt-5">
+            <button
+              className="bg-red-500 text-white px-10 py-2 rounded-md mt-5"
+              onClick={handleCekOngkir}
+            >
               Cek Harga
             </button>
           </div>
