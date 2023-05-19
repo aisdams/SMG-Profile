@@ -147,7 +147,7 @@ export default function Topbar() {
                             <span
                               className={`${
                                 isActive === '/about'
-                                  ? 'bg-violet-500 text-white'
+                                  ? 'bg-[#1abbdb] text-white'
                                   : 'text-gray-900'
                               } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                             >
@@ -162,7 +162,7 @@ export default function Topbar() {
                             <span
                               className={`${
                                 isActive === '/service'
-                                  ? 'bg-violet-500 text-white'
+                                  ? 'bg-[#1abbdb] text-white'
                                   : 'text-gray-900'
                               } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                             >
@@ -177,7 +177,7 @@ export default function Topbar() {
                             <span
                               className={`${
                                 isActive === '/fee'
-                                  ? 'bg-violet-500 text-white'
+                                  ? 'bg-[#1abbdb] text-white'
                                   : 'text-gray-900'
                               } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                             >
@@ -192,7 +192,7 @@ export default function Topbar() {
                             <span
                               className={`${
                                 isActive === '/tracking'
-                                  ? 'bg-violet-500 text-white'
+                                  ? 'bg-[#1abbdb] text-white'
                                   : 'text-gray-900'
                               } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                             >
@@ -207,7 +207,7 @@ export default function Topbar() {
                             <span
                               className={`${
                                 isActive === '/kemitraan'
-                                  ? 'bg-violet-500 text-white'
+                                  ? 'bg-[#1abbdb] text-white'
                                   : 'text-gray-900'
                               } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                             >
@@ -222,7 +222,7 @@ export default function Topbar() {
                             <span
                               className={`${
                                 isActive === '/contact'
-                                  ? 'bg-violet-500 text-white'
+                                  ? 'bg-[#1abbdb] text-white'
                                   : 'text-gray-900'
                               } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                             >
