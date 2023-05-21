@@ -37,10 +37,16 @@ const data = [
 export default function UsSpecial() {
   return (
     <div className="mt-10 px-10 xl:px-40 lg:px-28 animate-fade-right">
-      <div className="text-4xl font-bold">What Make Us Special?</div>
+      <div className="text-4xl font-bold" data-aos="fade-down">
+        What Make Us Special?
+      </div>
       <div className="flex flex-col my-10">
         {data.map((item, index) => (
-          <div className="flex justify-between my-2 shadow-xl" key={index}>
+          <div
+            data-aos="fade-right"
+            className="flex justify-between my-2 shadow-xl"
+            key={index}
+          >
             <div className="flex flex-col p-4 w-8/12 mobileL:w-full mobileM:w-full mobileS:w-full">
               <div className="text-2xl font-bold">{item.title}</div>
               <div>{item.desc}</div>

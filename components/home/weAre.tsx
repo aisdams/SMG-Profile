@@ -6,9 +6,11 @@ export default function WeAre() {
   return (
     <>
       <div className="mt-10 px-10 xl:px-40 lg:px-28">
-        <div className="text-4xl font-bold">Who We Are?</div>
+        <div className="text-4xl font-bold" data-aos="fade-down">
+          Who We Are?
+        </div>
         <div className="flex">
-          <div className="w-full xl:w-5/12">
+          <div className="w-full xl:w-5/12 z-[1]" data-aos="fade-right">
             <div className="text-base font-semibold mt-5 relative xl:w-[700px] z-[1]">
               LinkExpress yang merupakan sister company dari Sarana Mulya
               Logistic, memberikan warna tersendiri dalam layanan logistic bagi
@@ -110,7 +112,7 @@ export default function WeAre() {
               </div>
             </div>
           </div>
-          <div className="hidden xl:w-7/12 xl:block">
+          <div className="hidden xl:w-7/12 xl:block" data-aos="fade-left">
             <Image
               src={MapWeAre}
               priority

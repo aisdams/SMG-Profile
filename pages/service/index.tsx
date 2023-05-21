@@ -73,7 +73,7 @@ export default function Service() {
           }}
         />
         <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center">
-          <div className="text-white text-7xl font-bold">
+          <div className="text-white text-7xl font-bold" data-aos="fade-up">
             <p
               className=""
               style={{
@@ -87,41 +87,11 @@ export default function Service() {
       </div>
       <div className="my-20 px-10 xl:px-40 lg:px-28">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
-          {/* <div className="relative block bg-white rounded-lg shadow-lg">
-            <div className="flex">
-              <div
-                className="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg m-4 w-full"
-                data-mdb-ripple="true"
-                data-mdb-ripple-color="light"
-              >
-                <Image
-                  src="https://mdbcdn.b-cdn.net/img/new/avatars/8.jpg"
-                  className="w-full"
-                  alt="Sample photo"
-                  width={300}
-                  height={200}
-                />
-                <a href="#!">
-                  <div
-                    className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
-                    style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}
-                  ></div>
-                </a>
-              </div>
-            </div>
-            <div className="p-6">
-              <h5 className="text-lg font-bold mb-2">John Doe</h5>
-              <p>
-                Ut pretium ultricies dignissim. Sed sit amet mi eget urna
-                placerat vulputate. Ut vulputate est non quam dignissim
-                elementum. Donec a ullamcorper diam.
-              </p>
-            </div>
-          </div> */}
           {data.map((item, index) => (
             <div
               className="relative block bg-white rounded-lg shadow-lg"
               key={index}
+              data-aos="zoom-in"
             >
               <div className="flex">
                 <div

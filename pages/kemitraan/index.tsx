@@ -73,7 +73,7 @@ export default function Kemitraan() {
           }}
         />
         <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center">
-          <div className="text-white text-7xl font-bold">
+          <div className="text-white text-7xl font-bold" data-aos="fade-up">
             <p
               className=""
               style={{
@@ -86,11 +86,12 @@ export default function Kemitraan() {
         </div>
       </div>
       <div className="my-20 px-10 xl:px-40 lg:px-28">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
           {data.map((item, index) => (
             <div
               className="relative block bg-white shadow-lg border border-gray-200"
               key={index}
+              data-aos="zoom-in"
             >
               <div className="flex">
                 <div
@@ -101,16 +102,16 @@ export default function Kemitraan() {
                   <Image
                     src={item.image}
                     priority
-                    className="w-full"
+                    className="w-full grayscale hover:grayscale-0 transition-all duration-500"
                     alt="Sample photo"
                     width={300}
                     height={200}
                   />
 
-                  <div
+                  {/* <div
                     className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
                     style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}
-                  ></div>
+                  ></div> */}
                 </div>
               </div>
             </div>

@@ -39,7 +39,7 @@ export default function About() {
           }}
         />
         <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center">
-          <div className="text-white text-7xl font-bold">
+          <div className="text-white text-7xl font-bold" data-aos="fade-up">
             <p
               className=""
               style={{
@@ -60,22 +60,23 @@ export default function About() {
             width: '250px',
             height: '30px',
           }}
+          data-aos="fade-right"
         />
-        <div className="mt-5 font-semibold text-xl">
+        <div className="mt-5 font-semibold text-xl" data-aos="fade-right">
           Era disrupsi saat ini menjadikan setiap lini bisnis menjadi berubah
           dengan kecepatan yang belum pernah terjadi <br /> sebelumnya. Begitu
           juga dalam bidang logistic di Indonesia, terjadi pesaingan seru dengan
           munculnya para pemain <br /> baru yang lebih dinamis, efisien dan
           visioner.
         </div>
-        <div className="mt-5 font-semibold text-xl">
+        <div className="mt-5 font-semibold text-xl" data-aos="fade-right">
           LinkExpress yang merupakan sister company dari Sarana Mulya Logistic,
           memberikan warna <br /> tersendiri dalam layanan logistic bagi
           masyarakat Indonesia dengan keunggulan harga yang <br /> super
           kompetitif melalui tagline kami Satu Kota Satu Harga.
         </div>
         <div className="flex mt-5 text-xl justify-between relative">
-          <div className="font-semibold w-full lg:w-5/12">
+          <div className="font-semibold w-full lg:w-5/12" data-aos="fade-right">
             Kami juga akan terus mengembangkan layanan LinkExpress berbasis
             platform teknologi, sehingga menjadikan bisnis logistik akan semakin
             mudah dan terbuka untuk semua pelaku usaha. Dengan pengembangan
@@ -83,7 +84,10 @@ export default function About() {
             dalam bisnis logistik dengan platform teknologi LinkExpress, oleh
             karena itu semboyan kami adalah expression of It.
           </div>
-          <div className="w-6/12 absolute right-0 bottom-0 hidden xl:block lg:block">
+          <div
+            className="w-6/12 absolute right-0 bottom-0 hidden xl:block lg:block"
+            data-aos="fade-left"
+          >
             <Image
               src={Bg3}
               priority

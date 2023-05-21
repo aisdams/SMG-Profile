@@ -1,20 +1,30 @@
-import '@/styles/globals.css';
+import { useEffect } from 'react';
 import type { AppProps } from 'next/app';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Head from 'next/head';
-
+import Aos from 'aos';
 import Topbar from '@components/topbar';
 
-const qc = new QueryClient({
-  defaultOptions: {
-    queries: {
-      refetchOnWindowFocus: true,
-      retry: false,
-    },
-  },
-});
+import '@/styles/globals.css';
+import 'aos/dist/aos.css';
 
 export default function App({ Component, pageProps }: AppProps) {
+  const qc = new QueryClient({
+    defaultOptions: {
+      queries: {
+        refetchOnWindowFocus: true,
+        retry: false,
+      },
+    },
+  });
+
+  useEffect(() => {
+    Aos.init({
+      once: true,
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <QueryClientProvider client={qc}>
       <Head>
