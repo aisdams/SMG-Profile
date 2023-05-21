@@ -115,7 +115,7 @@ export default function FeeX() {
               cacheOptions
               loadOptions={loadOptions}
               defaultOptions
-              placeholder="Kota Asal"
+              placeholder="Kota Tujuan"
               value={citiesQuery.data?.find(
                 (option: any) => option['destination'] === cityInputValue
               )}
