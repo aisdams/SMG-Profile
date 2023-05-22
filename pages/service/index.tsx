@@ -73,7 +73,10 @@ export default function Service() {
           }}
         />
         <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center">
-          <div className="text-white text-7xl font-bold" data-aos="fade-up">
+          <div
+            className="text-white text-4xl font-bold md:text-7xl"
+            data-aos="fade-up"
+          >
             <p
               className=""
               style={{

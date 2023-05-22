@@ -73,7 +73,7 @@ export default function Kemitraan() {
           }}
         />
         <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center">
-          <div className="text-white text-7xl font-bold">
+          <div className="text-white text-4xl font-bold md:text-7xl">
             <p
               className=""
               style={{
@@ -86,35 +86,98 @@ export default function Kemitraan() {
         </div>
       </div>
       <div className="my-20 px-10 xl:px-40 lg:px-28">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
-          {data.map((item, index) => (
-            <div
-              className="relative block bg-white shadow-lg border border-gray-200"
-              key={index}
-            >
-              <div className="flex">
-                <div
-                  className="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg m-4 w-full"
-                  data-mdb-ripple="true"
-                  data-mdb-ripple-color="light"
-                >
-                  <Image
-                    src={item.image}
-                    priority
-                    className="w-full"
-                    alt="Sample photo"
-                    width={300}
-                    height={200}
-                  />
-
-                  <div
-                    className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
-                    style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}
-                  ></div>
-                </div>
+        <div className="flex xl:flex-row lg:flex-row md:flex-row mobileS:flex-col">
+          <div className="w-full md:w-8/12 p-4">
+            <div className="font-bold text-xl">
+              Apakah Anda memiliki pertanyaan?
+            </div>
+            <div className="flex flex-col md:flex-row mt-2 gap-2">
+              <div className="w-full">
+                <input
+                  type="text"
+                  placeholder="Nama"
+                  className="w-full border-2 border-gray-300 p-2 rounded-lg focus:outline-none focus:border-red-400"
+                />
+              </div>
+              <div className="w-full">
+                <input
+                  type="text"
+                  placeholder="Email"
+                  className="w-full border-2 border-gray-300 p-2 rounded-lg focus:outline-none focus:border-red-400"
+                />
               </div>
             </div>
-          ))}
+            <div className="flex flex-col md:flex-row mt-2 gap-2">
+              <div className="w-full">
+                <input
+                  type="text"
+                  placeholder="Phone"
+                  className="w-full border-2 border-gray-300 p-2 rounded-lg focus:outline-none focus:border-red-400"
+                />
+              </div>
+              <div className="w-full">
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  className="w-full border-2 border-gray-300 p-2 rounded-lg focus:outline-none focus:border-red-400"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col md:flex-row mt-2">
+              <textarea
+                name=""
+                id=""
+                cols={20}
+                rows={5}
+                placeholder="Message"
+                className="w-full border-2 border-gray-300 p-2 rounded-lg focus:outline-none focus:border-red-400"
+              />
+            </div>
+            <div className="flex justify-start mt-2">
+              <button className="bg-red-400 text-white px-4 py-2 rounded-lg">
+                Kirim
+              </button>
+            </div>
+          </div>
+          <div className="w-full md:w-4/12 bg-[#FBFBFB] rounded-xl p-4">
+            <div>
+              <div className="font-bold text-xl">Kantor pusat</div>
+              <div className="text-gray-600">
+                Kawasan Niaga Citra Grand. R15-17, RT.002/RW.008, Jatisampurna,
+                Kec. Jatisampurna, Kota Bks, Jawa Barat 17434
+              </div>
+            </div>
+            <div className="mt-4">
+              <div className="font-bold text-xl">Jam Kerja</div>
+              <div className="text-gray-600">
+                <ul>
+                  <li>Senin - Jumat : 09.00 - 17.00</li>
+                  <li>Sabtu : 08.00 - 14.00</li>
+                  <li>Minggu : Tutup</li>
+                </ul>
+              </div>
+            </div>
+            <div className="mt-4">
+              <div className="font-bold text-xl">Contact</div>
+              <div className="text-gray-600">
+                <ul>
+                  <li>Email : 09.00 - 17.00</li>
+                  <li>Phone : 08.00 - 14.00</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex xl:flex-row lg:flex-row md:flex-row mobileS:flex-col mt-10">
+          <iframe
+            width="100%"
+            height="500"
+            // frameborder="0"
+            // scrolling="no"
+            // marginheight="0"
+            // marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Kawasan%20Niaga%20Citra%20Grand.%20R15-17,%20RT.002/RW.008,%20Jatisampurna,%20Kec.%20Jatisampurna,%20Kota%20Bks,%20Jawa%20Barat%2017434+(LinkExpress)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ></iframe>
         </div>
       </div>
 

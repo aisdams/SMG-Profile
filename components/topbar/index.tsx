@@ -19,7 +19,7 @@ export default function Topbar() {
 
   return (
     <div className="fixed right-0 z-[2] w-full">
-      <div className="pt-0 lg:pt-10 lg:ps-10 lg:pe-10">
+      <div className="pt-0 lg:pt-10 lg:ps-20 lg:pe-20">
         <div
           className="flex justify-between bg-white"
           style={{
