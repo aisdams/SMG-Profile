@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import MapWeAre from 'public/weAre/map.png';
 import LinkexIcon from 'public/weAre/linkex_icon.png';
+import dynamic from 'next/dynamic';
+const CountUp = dynamic(() => import('react-countup'), { ssr: false });
 
 export default function WeAre() {
   return (
@@ -136,19 +138,43 @@ export default function WeAre() {
         <div className="mt-20 px-10 xl:px-40 lg:px-28">
           <div className="flex flex-col xl:flex-row justify-around gap-4 text-center">
             <div className="bg-[#eeeeee] w-full xl:w-3/12 flex flex-col p-6">
-              <div className="font-bold text-4xl">50.000+</div>
+              <CountUp duration={5} start={0} end={50000}>
+                {({ countUpRef }) => (
+                  <div className="font-bold text-4xl">
+                    <span ref={countUpRef} />+
+                  </div>
+                )}
+              </CountUp>
               <div className="font-semibold">PENGIRIMAN</div>
             </div>
             <div className="bg-[#eeeeee] w-full xl:w-3/12 flex flex-col p-6">
-              <div className="font-bold text-4xl">514+</div>
+              <CountUp duration={5} start={0} end={514}>
+                {({ countUpRef }) => (
+                  <div className="font-bold text-4xl">
+                    <span ref={countUpRef} />+
+                  </div>
+                )}
+              </CountUp>
               <div className="font-semibold">AREA TERCOVER</div>
             </div>
             <div className="bg-[#eeeeee] w-full xl:w-3/12 flex flex-col p-6">
-              <div className="font-bold text-4xl">300+</div>
+              <CountUp duration={5} start={0} end={300}>
+                {({ countUpRef }) => (
+                  <div className="font-bold text-4xl">
+                    <span ref={countUpRef} />+
+                  </div>
+                )}
+              </CountUp>
               <div className="font-semibold">PELANGGAN</div>
             </div>
             <div className="bg-[#eeeeee] w-full xl:w-3/12 flex flex-col p-6">
-              <div className="font-bold text-4xl">40+</div>
+              <CountUp duration={5} start={0} end={40}>
+                {({ countUpRef }) => (
+                  <div className="font-bold text-4xl">
+                    <span ref={countUpRef} />+
+                  </div>
+                )}
+              </CountUp>
               <div className="font-semibold">CABANG & AGEN</div>
             </div>
           </div>

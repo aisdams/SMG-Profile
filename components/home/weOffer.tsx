@@ -49,7 +49,7 @@ export default function WeOffer() {
         </div>
         <div className="grid xl:grid-cols-6 lg:grid-cols-3 md:grid-cols-3 mobileL:grid-cols-2 mt-10 gap-4 justify-around">
           {data.map((item, index) => (
-            <div className="flex flex-col" key={index} data-aos="zoom-in">
+            <div className="flex flex-col bg-white" key={index}>
               <Image
                 src={item.img}
                 priority
@@ -59,12 +59,9 @@ export default function WeOffer() {
                   height: '250px',
                 }}
               />
-              <div className="mx-1 py-4 px-2 -translate-y-4 bg-white border-t-[6px] border-[#1abbdb]">
+              <div className="flex flex-col mx-1 py-4 px-2">
                 <div className="font-bold text-lg">{item.name}</div>
                 <div className="text-sm">{item.desc}</div>
-                <button className="bg-[#1abbdb] mt-10 py-1 px-5 rounded-full text-white font-semibold">
-                  Read More...
-                </button>
               </div>
             </div>
           ))}
