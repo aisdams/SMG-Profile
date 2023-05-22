@@ -3,19 +3,36 @@ import Image from 'next/image';
 import Bg2 from 'public/footer/2.png';
 import Bg3 from 'public/footer/3.png';
 import Bg4 from 'public/footer/4.png';
+import Bg5 from 'public/footer/5.png';
 
 export default function Footer() {
   return (
     <div className="">
-      <Image
-        src={Bg4}
-        priority
-        alt="Picture of the author"
-        style={{
-          width: '100%',
-          height: '100%',
-        }}
-      />
+      <div className="relative w-full">
+        <Image
+          src={Bg4}
+          priority
+          alt="Picture of the author"
+          style={{
+            width: '100%',
+            height: '100%',
+          }}
+        />
+        <Image
+          src={Bg5}
+          priority
+          alt="Picture of the author"
+          style={{
+            width: '150px',
+            height: '70px',
+            position: 'absolute',
+            bottom: '0',
+            animation: 'linear infinite',
+            animationName: 'myAnim',
+            animationDuration: '20s',
+          }}
+        />
+      </div>
       <div className="bg-[#1abbdb] px-[1rem] md:px-[2rem] lg:px-[5rem] xl:px-[7rem]">
         <div className="flex flex-col items-center md:flex-row justify-between py-12 text-white">
           <div className="flex flex-col text-center md:text-left">
