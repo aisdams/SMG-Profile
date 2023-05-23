@@ -70,7 +70,7 @@ export default function CustomerSay() {
           {data.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="mb-6 lg:mb-0" data-aos="zoom-in">
-                <div className="bg-red-100 shadow-lg">
+                <div className="shadow-lg">
                   <Image
                     src={item.image}
                     priority
