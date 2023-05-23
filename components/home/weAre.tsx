@@ -150,7 +150,7 @@ export default function WeAre() {
               <div className="font-semibold">PENGIRIMAN</div>
             </div>
             <div className="bg-[#eeeeee] w-full xl:w-3/12 flex flex-col p-6">
-              <CountUp duration={5} start={0} end={514}>
+              <CountUp duration={5} start={0} end={514} delay={2}>
                 {({ countUpRef }) => (
                   <div className="font-bold text-4xl">
                     <span ref={countUpRef} />+
