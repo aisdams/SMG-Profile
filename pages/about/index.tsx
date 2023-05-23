@@ -106,18 +106,22 @@ export default function About() {
         </div>
         <div className="w-full">
           <Tab.Group>
-            <Tab.List className="flex flex-col md:flex-row rounded-xl mt-1">
+            {/* <Tab.List className="flex flex-col md:flex-row rounded-xl mt-1"> */}
+            <Tab.List className="grid md:grid-cols-3 mt-1">
               {tabs.map((item) => (
                 <Tab
                   key={item}
                   id="pointer"
                   className={({ selected }) =>
                     classNames(
-                      'w-full p-[2rem] pr-[4rem] text-sm font-medium leading-5 text-black bg-[#eeeeee]',
+                      'w-full p-[2rem] pr-[4rem] text-sm font-medium leading-5 text-black bg-[#eeeeee] relative',
                       'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
                       selected
-                        ? '!bg-[#1abbdb] !text-white shadow !text-xl'
-                        : 'text-black hover:bg-[#1abbdb] hover:text-white'
+                        ? '!bg-[#1abbdb] !text-white shadow mobileM:!text-xl'
+                        : 'text-black hover:bg-[#1abbdb] hover:text-white',
+                      item === 'Vision & Mision' && 'md:left-[21%]',
+                      item === 'Link GO!' && 'mt-5 md:mt-0',
+                      item === 'Company Value' && 'md:right-[21%] mt-5 md:mt-0'
                     )
                   }
                 >
