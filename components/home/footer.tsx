@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import Bg1 from 'public/footer/1.png';
 import Bg2 from 'public/footer/2.png';
@@ -20,7 +21,12 @@ export default function FooterHome() {
         />
         <div className="absolute top-[7rem] left-0 right-0 bottom-0 flex justify-center items-center">
           <div className="text-md font-bold text-white text-center">
-            <div className="flex bg-[#1abbdb] text-white px-5 py-2 rounded-full cursor-pointer">
+            <Link
+              href={'https://wa.me/6285810558522'}
+              target="_blank"
+              rel="noreferrer"
+              className="flex bg-[#1abbdb] text-white px-5 py-2 rounded-full cursor-pointer hover:shadow-xl"
+            >
               Hubungi Kami
               <Image
                 src={Bg3}
@@ -33,7 +39,7 @@ export default function FooterHome() {
                 className="mx-2"
               />
               0858-1055-8522
-            </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -69,9 +75,39 @@ export default function FooterHome() {
             <div className="font-bold mt-5 xl:mt-0 lg:mt-0">Social Media</div>
             <div className="font-semibold mt-0 xl:mt-5 lg:mt-5">
               <ul>
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>Tiktok</li>
+                <li>
+                  <Link
+                    href="https://www.facebook.com/linkexpressofit"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span className="hover:underline cursor-pointer">
+                      Facebook
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://www.instagram.com/linkexpressofficial"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span className="hover:underline cursor-pointer">
+                      Instagram
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://www.tiktok.com/@linkexpressofficial"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span className="hover:underline cursor-pointer">
+                      Tiktok
+                    </span>
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>

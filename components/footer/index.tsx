@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import Bg2 from 'public/footer/2.png';
 import Bg3 from 'public/footer/3.png';
@@ -44,7 +45,12 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex items-center mt-5 md:mt-0">
-            <div className="flex items-center border-2 text-xl rounded-full py-3 px-6 font-bold cursor-pointer hover:bg-white hover:text-[#1abbdb]">
+            <Link
+              href={'https://wa.me/6285810558522'}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center border-2 text-xl rounded-full py-3 px-6 font-bold cursor-pointer hover:bg-white hover:text-[#1abbdb]"
+            >
               <Image
                 src={Bg3}
                 priority
@@ -54,9 +60,9 @@ export default function Footer() {
                   height: '25px',
                 }}
                 className="mx-2"
-              />{' '}
+              />
               0858-1055-8522
-            </div>
+            </Link>
           </div>
         </div>
       </div>

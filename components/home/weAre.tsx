@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import MapWeAre from 'public/weAre/map.png';
 import LinkexIcon from 'public/weAre/linkex_icon.png';
-import dynamic from 'next/dynamic';
-// import { lazy } from 'react';
+// import dynamic from 'next/dynamic';
 // const CountUp = dynamic(() => import('react-countup'), { ssr: false });
 import { useCountUp } from 'react-countup';
 import { useRef } from 'react';
