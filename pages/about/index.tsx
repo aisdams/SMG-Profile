@@ -110,9 +110,10 @@ export default function About() {
               {tabs.map((item) => (
                 <Tab
                   key={item}
+                  id="pointer"
                   className={({ selected }) =>
                     classNames(
-                      'w-full p-[2rem] text-sm font-medium leading-5 text-blue-700 bg-[#eeeeee]',
+                      'w-full p-[2rem] pr-[4rem] text-sm font-medium leading-5 text-blue-700 bg-[#eeeeee]',
                       'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
                       selected
                         ? '!bg-[#1abbdb] !text-white shadow !text-xl'
