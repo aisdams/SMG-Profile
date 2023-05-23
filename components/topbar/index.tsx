@@ -3,7 +3,7 @@ import Link from 'next/link';
 import classNames from 'classnames';
 import { useRouter } from 'next/router';
 import { Menu, Transition } from '@headlessui/react';
-import { Fragment, useEffect, useRef, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import { HiMenu } from 'react-icons/hi';
 
 import Bg1 from 'public/topbar/1.png';

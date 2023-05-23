@@ -1,53 +1,12 @@
 import Image from 'next/image';
 import Bg1 from 'public/kemitraan/1.png';
-import Bg2 from 'public/service/2.png';
-import Bg3 from 'public/service/3.png';
-import Bg4 from 'public/service/4.png';
-import Bg5 from 'public/service/5.png';
-import Bg6 from 'public/service/6.png';
-import Bg7 from 'public/service/7.png';
+import Bg2 from 'public/kemitraan/2.png';
+import Bg3 from 'public/kemitraan/3.png';
+import Bg4 from 'public/kemitraan/4.png';
 
 import Footer from '@components/footer';
 
 export default function Kemitraan() {
-  const data = [
-    {
-      name: 'Reguler',
-      description:
-        'adalah layanan pengiriman atau paket door to door dengan moda laut dan darat yang berfokus pada biaya yang lebih efisien dengan tetap memberikan kepastian waktu pengiriman.',
-      image: Bg2,
-    },
-    {
-      name: 'Express',
-      description:
-        'adalah layanan pengiriman atau paket door to door dengan waktu yang cepat. Sebagian besar moda yang digunakan adalah pesawat udara.',
-      image: Bg3,
-    },
-    {
-      name: 'Trucking',
-      description:
-        'adalah layanan pengiriman paket atau High value Shipment secara door to door dengan Full Trucking Load atau Less Trucking Load yang disesuaikan dengan kebutuhan pelanggan.',
-      image: Bg4,
-    },
-    {
-      name: 'Container',
-      description:
-        'Container adalah layanan pengiriman paket atau High Value Shipment secara door to door dengan Full Container Load ataupun Less Container Load yang disesuaikan dengan kebutuhan pelanggan.',
-      image: Bg5,
-    },
-    {
-      name: 'EXIM (Export Import) and Custom Clearence',
-      description:
-        'adalah layanan pengiriman baik export maupun import door to door container maupun kg-base, serta layanan custom clearance.',
-      image: Bg6,
-    },
-    {
-      name: 'Warehousing',
-      description:
-        'Warehousing adalah layanan yang menawarkan jasa penyimpanan barang berbentuk gudang.',
-      image: Bg7,
-    },
-  ];
   return (
     <div className="">
       <div className="relative">
@@ -89,36 +48,75 @@ export default function Kemitraan() {
         </div>
       </div>
       <div className="my-20 px-10 xl:px-40 lg:px-28">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
-          {data.map((item, index) => (
-            <div
-              className="relative block bg-white shadow-lg border border-gray-200"
-              key={index}
-              data-aos="zoom-in"
-            >
-              <div className="flex">
-                <div
-                  className="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg m-4 w-full"
-                  data-mdb-ripple="true"
-                  data-mdb-ripple-color="light"
-                >
-                  <Image
-                    src={item.image}
-                    priority
-                    className="w-full grayscale hover:grayscale-0 transition-all duration-500"
-                    alt="Sample photo"
-                    width={300}
-                    height={200}
-                  />
-
-                  {/* <div
-                    className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
-                    style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}
-                  ></div> */}
-                </div>
-              </div>
+        <div className="bg-[#1abbdb] w-full flex flex-col py-4 text-2xl font-semibold text-white">
+          <div className="text-center">
+            Pembayaran keanggotaan LinkShop dapat melalui transfer bank ke
+            rekening berikut:
+          </div>
+          <div className="text-center mt-5 md:mt-0">
+            BANK DKI SYARIAH a/n PT. SARANA MULYA LOGISTIK
+          </div>
+          <div className="text-center mt-5 md:mt-0">
+            No. Rekening: 70912002176
+          </div>
+        </div>
+        <div className="mt-5 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="flex flex-col hover:shadow-xl">
+            <Image
+              src={Bg2}
+              priority
+              alt="Picture of the author"
+              style={{
+                objectFit: 'cover',
+                width: '100%',
+                height: '100%',
+              }}
+            />
+            <div className="text-center font-semibold text-xl py-4 hover:bg-[#1abbdb] cursor-pointer">
+              SELENGKAPNYA
             </div>
-          ))}
+          </div>
+          <div className="flex flex-col hover:shadow-xl">
+            <Image
+              src={Bg3}
+              priority
+              alt="Picture of the author"
+              style={{
+                objectFit: 'cover',
+                width: '100%',
+                height: '100%',
+              }}
+            />
+            <div className="text-center font-semibold text-xl py-4 hover:bg-[#1abbdb] cursor-pointer">
+              SELENGKAPNYA
+            </div>
+          </div>
+          <div className="flex flex-col hover:shadow-xl">
+            <Image
+              src={Bg4}
+              priority
+              alt="Picture of the author"
+              style={{
+                objectFit: 'cover',
+                width: '100%',
+                height: '100%',
+              }}
+            />
+            <div className="text-center font-semibold text-xl py-4 hover:bg-[#1abbdb] cursor-pointer">
+              SELENGKAPNYA
+            </div>
+          </div>
+        </div>
+        <div className="mt-10 flex flex-col">
+          <div className="flex justify-center text-2xl font-semibold">
+            Jika telah melakukan transfer/pembayaran kemitraan LinkShop silahkan
+            KLIK
+          </div>
+          <div className="flex justify-center">
+            <button className="bg-[#1abbdb] text-2xl font-semibold rounded-lg text-white px-10 py-2 mt-5 hover:shadow-xl">
+              KONFIRMASI PEMBAYARAN
+            </button>
+          </div>
         </div>
       </div>
 
