@@ -47,7 +47,10 @@ export default function WeOffer() {
         <div className="text-4xl font-bold text-white" data-aos="fade-down">
           What We Offer?
         </div>
-        <div className="grid xl:grid-cols-6 lg:grid-cols-3 md:grid-cols-3 mobileL:grid-cols-2 mt-10 gap-4 justify-around">
+        <div
+          className="grid xl:grid-cols-6 lg:grid-cols-3 md:grid-cols-3 mobileL:grid-cols-2 mt-10 gap-4 justify-around"
+          data-aos="fade-up"
+        >
           {data.map((item, index) => (
             <div className="flex flex-col bg-white" key={index}>
               <Image

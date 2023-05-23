@@ -2,7 +2,9 @@ import Image from 'next/image';
 import MapWeAre from 'public/weAre/map.png';
 import LinkexIcon from 'public/weAre/linkex_icon.png';
 import dynamic from 'next/dynamic';
+// import { lazy } from 'react';
 const CountUp = dynamic(() => import('react-countup'), { ssr: false });
+// const CountUp = lazy(() => import('react-countup'));
 
 export default function WeAre() {
   return (
