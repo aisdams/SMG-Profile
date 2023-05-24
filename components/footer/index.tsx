@@ -98,9 +98,39 @@ export default function Footer() {
             <div className="font-bold mt-5 xl:mt-0 lg:mt-0">Social Media</div>
             <div className="font-semibold mt-0 xl:mt-5 lg:mt-5">
               <ul>
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>Tiktok</li>
+                <li>
+                  <Link
+                    href="https://www.facebook.com/linkexpressofit"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span className="hover:underline cursor-pointer">
+                      Facebook
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://www.instagram.com/linkexpressofficial"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span className="hover:underline cursor-pointer">
+                      Instagram
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://www.tiktok.com/@linkexpressofficial"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span className="hover:underline cursor-pointer">
+                      Tiktok
+                    </span>
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
