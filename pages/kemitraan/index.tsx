@@ -3,10 +3,45 @@ import Bg1 from 'public/kemitraan/1.png';
 import Bg2 from 'public/kemitraan/2.png';
 import Bg3 from 'public/kemitraan/3.png';
 import Bg4 from 'public/kemitraan/4.png';
+// import Bg5 from 'public/kemitraan/5.png';
+import Bg6 from 'public/kemitraan/6.png';
+import Bg7 from 'public/kemitraan/7.png';
 
 import Footer from '@components/footer';
+import Modal from '@components/pages/kemitraan/modal';
+import { useState } from 'react';
 
 export default function Kemitraan() {
+  const data = [
+    {
+      title: 'LinkShop Paket Ruby',
+      image: Bg2,
+      imagePaket: Bg6,
+    },
+    {
+      title: 'LinkShop Paket Safir',
+      image: Bg3,
+      imagePaket: Bg6,
+    },
+    {
+      title: 'LinkShop Paket Diamond',
+      image: Bg4,
+      imagePaket: Bg7,
+    },
+  ];
+
+  const [show, setShow] = useState(false);
+  const [modalData, setModalData] = useState<any>([]);
+  const handleModal = (data: any) => {
+    console.log(data);
+    setModalData(data);
+    // reset(data);
+    setShow(!show);
+  };
+  const handleModalClose = () => {
+    setShow(false);
+  };
+
   return (
     <div className="">
       <div className="relative">
@@ -61,7 +96,7 @@ export default function Kemitraan() {
           </div>
         </div>
         <div className="mt-5 grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="flex flex-col hover:shadow-xl">
+          {/* <div className="flex flex-col hover:shadow-xl" onClick={handleModal}>
             <Image
               src={Bg2}
               priority
@@ -76,7 +111,7 @@ export default function Kemitraan() {
               SELENGKAPNYA
             </div>
           </div>
-          <div className="flex flex-col hover:shadow-xl">
+          <div className="flex flex-col hover:shadow-xl" onClick={handleModal}>
             <Image
               src={Bg3}
               priority
@@ -91,7 +126,7 @@ export default function Kemitraan() {
               SELENGKAPNYA
             </div>
           </div>
-          <div className="flex flex-col hover:shadow-xl">
+          <div className="flex flex-col hover:shadow-xl" onClick={handleModal}>
             <Image
               src={Bg4}
               priority
@@ -105,7 +140,28 @@ export default function Kemitraan() {
             <div className="text-center font-semibold text-xl py-4 hover:bg-[#1abbdb] cursor-pointer">
               SELENGKAPNYA
             </div>
-          </div>
+          </div> */}
+          {data.map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col hover:shadow-xl"
+              onClick={() => handleModal(item)}
+            >
+              <Image
+                src={item.image}
+                priority
+                alt="Picture of the author"
+                style={{
+                  objectFit: 'cover',
+                  width: '100%',
+                  height: '100%',
+                }}
+              />
+              <div className="text-center font-semibold text-xl py-4 hover:bg-[#1abbdb] cursor-pointer">
+                SELENGKAPNYA
+              </div>
+            </div>
+          ))}
         </div>
         <div className="mt-10 flex flex-col">
           <div className="flex justify-center text-2xl font-semibold">
@@ -120,6 +176,27 @@ export default function Kemitraan() {
         </div>
       </div>
 
+      <Modal title={modalData.title} onClose={handleModalClose} show={show}>
+        {/* <FormProvider {...methods}> */}
+        <Image
+          src={modalData.imagePaket}
+          priority
+          alt="Picture of the author"
+          width="0"
+          height="0"
+          style={{
+            objectFit: 'cover',
+            zIndex: 4,
+          }}
+        />
+        <div className="flex justify-center my-5">
+          <button className="bg-[#1abbdb] text-2xl font-semibold rounded-lg text-white px-10 py-2 hover:shadow-xl">
+            DAFTAR SEKARANG
+          </button>
+        </div>
+        {/* <InputText name="name" />
+        </FormProvider> */}
+      </Modal>
       <Footer />
     </div>
   );
