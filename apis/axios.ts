@@ -18,7 +18,7 @@ const client = (() =>
     headers: {
       Authorization: `Basic ${btoa(
         // eslint-disable-next-line prettier/prettier
-        `${process.env.NEXT_PUBLIC_API_USERNAME}:${process.env.NEXT_PUBLIC_API_PASSWORD}`
+        `sml_serverapi:sml123`
       )}`,
     },
   }))();
