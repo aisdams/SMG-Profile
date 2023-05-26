@@ -69,10 +69,19 @@ const productTypePriceList: Record<ProductType, number> = {
   LCL: 6,
 };
 
+interface FormData {
+  city_code: string;
+  product: ProductType;
+  weight: string;
+  length?: string;
+  width?: string;
+  height?: string;
+}
+
 export default function Fee() {
-  const defaultValues = {
+  const defaultValues: FormData = {
     city_code: '',
-    product: '',
+    product: 'EXPRESS STANDARD',
     weight: '',
     length: '',
     width: '',
@@ -129,13 +138,15 @@ export default function Fee() {
     city_code: string;
     product: ProductType;
     weight: string;
-    length: string;
-    width: string;
-    height: string;
+    length?: string;
+    width?: string;
+    height?: string;
   }) => {
     const volumeType = productTypePriceList[data.product];
     const volume =
-      parseInt(data.length) * parseInt(data.width) * parseInt(data.height);
+      parseInt(data.length ? data.length : '') *
+      parseInt(data.width ? data.width : '') *
+      parseInt(data.height ? data.height : '');
     const volumeProduct = Math.trunc(volume / volumeType);
     const volumeFinal = Math.trunc(volumeProduct) / 1000;
 
@@ -149,6 +160,10 @@ export default function Fee() {
       product: data.product,
       weight: String(weightOrVolume),
     };
+
+    delete data.length;
+    delete data.width;
+    delete data.height;
 
     return priceMutation.mutateAsync(payload);
   };
