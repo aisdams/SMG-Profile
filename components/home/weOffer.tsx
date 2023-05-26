@@ -21,12 +21,12 @@ export default function WeOffer() {
     },
     {
       name: 'Container',
-      desc: 'Layanan pengiriman paket atau High Value Shipment secara door to door dengan Full Container Load ataupun Less Container Load yang disesuaikan dengan kebutuhan pelanggan',
+      desc: 'Layanan pengiriman paket atau High Value Shipment secara door to door dengan Full Container Load ataupun Less Container Load yang disesuaikan dengan kebutuhan pelanggan.',
       img: Bg3,
     },
     {
       name: 'Trucking',
-      desc: 'Layanan pengiriman paket atau High value Shipment secara door to door dengan Full Trucking Load atau Less Trucking Load yang disesuaikan dengan kebutuhan pelanggan',
+      desc: 'Layanan pengiriman paket atau High value Shipment secara door to door dengan Full Trucking Load atau Less Trucking Load yang disesuaikan dengan kebutuhan pelanggan.',
       img: Bg4,
     },
     {
