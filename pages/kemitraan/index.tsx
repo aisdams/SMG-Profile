@@ -10,6 +10,7 @@ import Bg7 from 'public/kemitraan/7.png';
 import Footer from '@components/footer';
 import Modal from '@components/pages/kemitraan/modal';
 import { useState } from 'react';
+import classNames from 'classnames';
 
 export default function Kemitraan() {
   const data = [
@@ -17,16 +18,19 @@ export default function Kemitraan() {
       title: 'LinkShop Paket Ruby',
       image: Bg2,
       imagePaket: Bg6,
+      status: false,
     },
     {
       title: 'LinkShop Paket Safir',
       image: Bg3,
       imagePaket: Bg6,
+      status: true,
     },
     {
       title: 'LinkShop Paket Diamond',
       image: Bg4,
       imagePaket: Bg7,
+      status: true,
     },
   ];
 
@@ -96,56 +100,11 @@ export default function Kemitraan() {
           </div>
         </div>
         <div className="mt-5 grid grid-cols-1 md:grid-cols-3 gap-4">
-          {/* <div className="flex flex-col hover:shadow-xl" onClick={handleModal}>
-            <Image
-              src={Bg2}
-              priority
-              alt="Picture of the author"
-              style={{
-                objectFit: 'cover',
-                width: '100%',
-                height: '100%',
-              }}
-            />
-            <div className="text-center font-semibold text-xl py-4 hover:bg-[#1abbdb] cursor-pointer">
-              SELENGKAPNYA
-            </div>
-          </div>
-          <div className="flex flex-col hover:shadow-xl" onClick={handleModal}>
-            <Image
-              src={Bg3}
-              priority
-              alt="Picture of the author"
-              style={{
-                objectFit: 'cover',
-                width: '100%',
-                height: '100%',
-              }}
-            />
-            <div className="text-center font-semibold text-xl py-4 hover:bg-[#1abbdb] cursor-pointer">
-              SELENGKAPNYA
-            </div>
-          </div>
-          <div className="flex flex-col hover:shadow-xl" onClick={handleModal}>
-            <Image
-              src={Bg4}
-              priority
-              alt="Picture of the author"
-              style={{
-                objectFit: 'cover',
-                width: '100%',
-                height: '100%',
-              }}
-            />
-            <div className="text-center font-semibold text-xl py-4 hover:bg-[#1abbdb] cursor-pointer">
-              SELENGKAPNYA
-            </div>
-          </div> */}
           {data.map((item, index) => (
             <div
               key={index}
               className="flex flex-col hover:shadow-xl"
-              onClick={() => handleModal(item)}
+              onClick={() => (item.status ? handleModal(item) : null)}
             >
               <Image
                 src={item.image}
@@ -157,7 +116,12 @@ export default function Kemitraan() {
                   height: '100%',
                 }}
               />
-              <div className="text-center font-semibold text-xl py-4 hover:bg-[#1abbdb] cursor-pointer">
+              <div
+                className={classNames(
+                  'text-center font-semibold text-xl py-4 hover:bg-[#1abbdb] cursor-pointer',
+                  item.status ? '' : 'cursor-not-allowed'
+                )}
+              >
                 SELENGKAPNYA
               </div>
             </div>

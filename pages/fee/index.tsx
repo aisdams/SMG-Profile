@@ -18,11 +18,62 @@ import Footer from '@components/footer';
 export const dateYearMonthFormat = (date: string) =>
   format(new Date(date), 'yyyy-MM-dd', { locale: id });
 
+type ProductType =
+  | 'EXPRESS STANDARD'
+  | 'PORT TO PORT'
+  | 'ONS'
+  | 'SAMEDAY'
+  | 'REGULER KUBIKASI'
+  | 'REGULER KAPAL CEPAT'
+  | 'REGULER LINKEX'
+  | 'REGULER LAUT'
+  | 'REGULER STANDARD'
+  | 'BLIND VAN'
+  | 'CDD COLD CHAIN'
+  | 'CDD'
+  | 'CDE COLD CHAIN'
+  | 'CDE'
+  | 'FUSO COLD CHAIN'
+  | 'FUSO'
+  | 'WINGBOX'
+  | 'CONTAINER 20'
+  | 'CONTAINER 40'
+  | 'FCL'
+  | 'LCL';
+
+const productTypePriceList: Record<ProductType, number> = {
+  // EXPRESS
+  'EXPRESS STANDARD': 6,
+  'PORT TO PORT': 6,
+  ONS: 6,
+  SAMEDAY: 6,
+  // REGULER
+  'REGULER KUBIKASI': 4,
+  'REGULER KAPAL CEPAT': 4,
+  'REGULER LINKEX': 4,
+  'REGULER LAUT': 4,
+  'REGULER STANDARD': 4,
+  // TRUCKING
+  'BLIND VAN': 6,
+  'CDD COLD CHAIN': 6,
+  CDD: 6,
+  'CDE COLD CHAIN': 6,
+  CDE: 6,
+  'FUSO COLD CHAIN': 6,
+  FUSO: 6,
+  WINGBOX: 6,
+  // CONTAINER
+  'CONTAINER 20': 4,
+  'CONTAINER 40': 4,
+  FCL: 6,
+  LCL: 6,
+};
+
 export default function Fee() {
   const defaultValues = {
-    city_code: 'AMQCA00001',
-    product: 'EXPRESS STANDARD',
-    weight: '21',
+    city_code: '',
+    product: '',
+    weight: '',
     length: '',
     width: '',
     height: '',
@@ -31,11 +82,7 @@ export default function Fee() {
     mode: 'all',
     defaultValues,
   });
-  const {
-    handleSubmit,
-    getValues,
-    formState: { isSubmitting },
-  } = methods;
+  const { handleSubmit, getValues } = methods;
 
   const [show, setShow] = useState(false);
   const handleModalClose = () => {
@@ -78,52 +125,32 @@ export default function Fee() {
     },
   });
 
-  const productTypePriceList = {
-    // EXPRESS
-    'EXPRESS STANDARD': 6,
-    'PORT TO PORT': 6,
-    ONS: 6,
-    SAMEDAY: 6,
-    // REGULER
-    'REGULER KUBIKASI': 4,
-    'REGULER KAPAL CEPAT': 4,
-    'REGULER LINKEX': 4,
-    'REGULER LAUT': 4,
-    'REGULER STANDARD': 4,
-    // TRUCKING
-    'BLIND VAN': 6,
-    'CDD COLD CHAIN': 6,
-    CDD: 6,
-    'CDE COLD CHAIN': 6,
-    CDE: 6,
-    'FUSO COLD CHAIN': 6,
-    FUSO: 6,
-    WINGBOX: 6,
-    // CONTAINER
-    'CONTAINER 20': 4,
-    'CONTAINER 40': 4,
-    FCL: 6,
-    LCL: 6,
-  };
-
   const onSubmit = async (data: {
     city_code: string;
-    product: string;
+    product: ProductType;
     weight: string;
-    length?: string;
-    width?: string;
-    height?: string;
+    length: string;
+    width: string;
+    height: string;
   }) => {
-    console.log(data);
-    // get productTypePriceList with same data.product with typescript
-    // const volumeType = productTypePriceList[data.product];
-    // console.log(volumeType);
+    const volumeType = productTypePriceList[data.product];
+    const volume =
+      parseInt(data.length) * parseInt(data.width) * parseInt(data.height);
+    const volumeProduct = Math.trunc(volume / volumeType);
+    const volumeFinal = Math.trunc(volumeProduct) / 1000;
 
-    delete data.length;
-    delete data.width;
-    delete data.height;
+    const weightOrVolume =
+      parseInt(data.weight) > volumeFinal
+        ? data.weight
+        : Math.round((volumeFinal + Number.EPSILON) * 100) / 100;
 
-    return priceMutation.mutateAsync(data);
+    const payload = {
+      city_code: data.city_code,
+      product: data.product,
+      weight: String(weightOrVolume),
+    };
+
+    return priceMutation.mutateAsync(payload);
   };
 
   const [city, setCity] = useState<any>([]);
@@ -202,7 +229,7 @@ export default function Fee() {
                 className="w-full h-full border-2 border-gray-300 rounded-md px-3 py-2 outline-none"
               />
 
-              {/* <div className="flex">
+              <div className="flex">
                 <input
                   type="text"
                   className="border-2 border-gray-300 rounded-md px-3 py-2 outline-none mt-5 w-full"
@@ -227,7 +254,7 @@ export default function Fee() {
                   })}
                   placeholder="Tinggi (cm)"
                 />
-              </div> */}
+              </div>
             </div>
             <div>
               <button
@@ -276,6 +303,29 @@ export default function Fee() {
             type="text"
             className="border-2 border-gray-300 rounded-md px-3 py-2 outline-none ml-2 w-9/12"
             value={data.kg_price}
+            disabled
+          />
+        </div>
+        <div className="flex mt-5">
+          <div className="flex items-center font-semibold text-base w-3/12">
+            Dimensi Barang :
+          </div>
+          <input
+            type="text"
+            className="border-2 border-gray-300 rounded-md px-3 py-2 outline-none ml-2 w-3/12"
+            value={getValues('length') + ' CM'}
+            disabled
+          />
+          <input
+            type="text"
+            className="border-2 border-gray-300 rounded-md px-3 py-2 outline-none ml-2 w-3/12"
+            value={getValues('width') + ' CM'}
+            disabled
+          />
+          <input
+            type="text"
+            className="border-2 border-gray-300 rounded-md px-3 py-2 outline-none ml-2 w-3/12"
+            value={getValues('height') + ' CM'}
             disabled
           />
         </div>
