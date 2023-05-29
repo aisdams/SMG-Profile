@@ -50,14 +50,15 @@ export default function WeAre() {
           <div className="w-full xl:w-5/12 z-[1]" data-aos="fade-right">
             <div className="text-base font-semibold mt-5 relative xl:w-[700px] z-[1]">
               LinkExpress yang merupakan sister company dari Sarana Mulya
-              Logistic, memberikan warna tersendiri dalam layanan logistic bagi
-              masyarakat Indonesia dengan keunggulan harga yang super kompetitif
-              melalui tagline kami Satu Kota Satu Harga.
+              Logistic, memberikan warna tersendiri dalam layanan Logistik &
+              Sarana Mulya Logistik bagi masyarakat Indonesia dengan keunggulan
+              harga yang super kompetitif melalui tagline kami Satu Kota Satu
+              Harga.
             </div>
             <div className="text-base font-semibold mt-5 relative xl:w-[700px] z-[1]">
               LINKEXPRESS memberikan solusi layanan pickup di tempat dengan
-              harga hemat dan transparan (1 Kota, 1 Harga). Cukup perlu NGOPI,
-              anda dapat bertransaksi dengan LINKEXPRESS
+              harga hemat dan transparan (Satu Kota, Satu Harga). Cukup perlu
+              NGOPI, Anda dapat bertransaksi dengan LINKEXPRESS
             </div>
             <div className="text-base font-semibold mt-3 relative xl:w-[650px] z-[1]">
               <div className="flex">
@@ -143,7 +144,7 @@ export default function WeAre() {
                   </div>
                   <div className="text-base">
                     Silahkan Anda bersantai sembari NGOPI. Biarkan pelayanan
-                    kami menjadi idaman bagi anda
+                    kami menjadi idaman bagi Anda
                   </div>
                 </div>
               </div>

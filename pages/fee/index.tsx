@@ -8,6 +8,7 @@ import { id } from 'date-fns/locale';
 import { FormProvider, useForm } from 'react-hook-form';
 import InputText from '@components/forms/InputText';
 import InputSelect from '@components/forms/InputSelect';
+import InputSelectDynamic from '@components/forms/InputSelectDynamic';
 import ModalBasic from '@components/modal/modalBasic';
 
 import Image from 'next/image';
@@ -216,12 +217,15 @@ export default function Fee() {
           <div className="flex flex-col items-center text-xl">
             <div className="w-[600px]">
               <div>
-                <InputSelect
+                <InputSelectDynamic
                   name="city_code"
-                  options={citiesQuery.data}
-                  optionLabel={(option) => `${option.destination}`}
-                  valueKey="city_code"
                   placeholder="Kota Tujuan"
+                  query={citiesQuery}
+                  isLoading={citiesQuery.isLoading}
+                  inputValue={cityInputValue}
+                  setInputValue={setCityInputValue}
+                  optionLabel={(option) => `${option.destination}`}
+                  uniqueField="city_code"
                   func={getCitySelect}
                 />
               </div>

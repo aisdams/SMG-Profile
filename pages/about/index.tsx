@@ -12,7 +12,7 @@ import classNames from 'classnames';
 import Footer from '@components/footer';
 
 export default function About() {
-  const tabs = ['Vision & Mision', 'Link GO!', 'Company Value'];
+  const tabs = ['Vision & Mission', 'Link GO!', 'Company Value'];
 
   return (
     <div className="">
@@ -67,16 +67,15 @@ export default function About() {
         />
         <div className="mt-5 font-semibold text-xl" data-aos="fade-right">
           Era disrupsi saat ini menjadikan setiap lini bisnis menjadi berubah
-          dengan kecepatan yang belum pernah terjadi <br /> sebelumnya. Begitu
-          juga dalam bidang logistic di Indonesia, terjadi pesaingan seru dengan
-          munculnya para pemain <br /> baru yang lebih dinamis, efisien dan
-          visioner.
+          dengan kecepatan yang belum pernah terjadi sebelumnya. Begitu juga
+          dalam bidang logistic di Indonesia, terjadi pesaingan seru dengan
+          munculnya para pemain baru yang lebih dinamis, efisien dan visioner.
         </div>
         <div className="mt-5 font-semibold text-xl" data-aos="fade-right">
           LinkExpress yang merupakan sister company dari Sarana Mulya Logistic,
-          memberikan warna <br /> tersendiri dalam layanan logistic bagi
-          masyarakat Indonesia dengan keunggulan harga yang <br /> super
-          kompetitif melalui tagline kami Satu Kota Satu Harga.
+          memberikan warna tersendiri dalam layanan logistic bagi masyarakat
+          Indonesia dengan keunggulan harga yang super kompetitif melalui
+          tagline kami Satu Kota Satu Harga.
         </div>
         <div className="flex mt-5 text-xl justify-between relative">
           <div className="font-semibold w-full lg:w-5/12" data-aos="fade-right">
@@ -85,7 +84,7 @@ export default function About() {
             mudah dan terbuka untuk semua pelaku usaha. Dengan pengembangan
             tersebut nantinya setiap orang dapat berpartisipasi dan berpartner
             dalam bisnis logistik dengan platform teknologi LinkExpress, oleh
-            karena itu semboyan kami adalah expression of It.
+            karena itu semboyan kami adalah Expression Of IT.
           </div>
           <div
             className="w-6/12 absolute right-0 bottom-0 hidden xl:block lg:block"
@@ -119,7 +118,7 @@ export default function About() {
                       selected
                         ? '!bg-[#1abbdb] !text-white shadow mobileM:!text-xl'
                         : 'text-black hover:bg-[#1abbdb] hover:text-white',
-                      item === 'Vision & Mision' && 'md:left-[21%]',
+                      item === 'Vision & Mission' && 'md:left-[21%]',
                       item === 'Link GO!' && 'mt-5 md:mt-0',
                       item === 'Company Value' && 'md:right-[21%] mt-5 md:mt-0'
                     )
@@ -138,7 +137,7 @@ export default function About() {
                     'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2'
                   )}
                 >
-                  {item === 'Vision & Mision' && (
+                  {item === 'Vision & Mission' && (
                     <div className="flex flex-col">
                       <Image
                         src={Bg4}
@@ -165,7 +164,7 @@ export default function About() {
                     </div>
                   )}
                   {item === 'Company Value' && (
-                    <div className="flex justify-center">
+                    <div className="flex justify-center mt-10">
                       <Image
                         src={Bg6}
                         priority

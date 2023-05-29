@@ -9,7 +9,7 @@ import Bg5 from 'public/usSpecial/5.png';
 const data = [
   {
     title: 'RAJANYA REMOTE AREA',
-    desc: 'Menjangkau 514 kabupaten Kota seluruh Indonesia hingga remote area',
+    desc: 'Menjangkau 514 Kabupaten/Kota ke seluruh Indonesia hingga remote area',
     img: Bg1,
   },
   {
@@ -19,12 +19,12 @@ const data = [
   },
   {
     title: 'SATU KOTA SATU HARGA',
-    desc: 'Link Express hadir dengan tarif seragam yang sangat membantu untuk lebih berhemat',
+    desc: 'LINKEXPRESS hadir dengan tarif seragam yang sangat membantu untuk lebih berhemat',
     img: Bg3,
   },
   {
     title: 'TOP PRIORITY GUARANTEE',
-    desc: 'Progam garansi yang menjamin barang dalam hal kehilangan sesuai dengan nilai barang yang hilang',
+    desc: 'Program garansi yang menjamin barang dalam hal kehilangan sesuai dengan nilai barang yang hilang',
     img: Bg4,
   },
   {

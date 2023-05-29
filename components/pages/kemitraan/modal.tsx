@@ -33,18 +33,23 @@ const Modal = (props: Props) => {
       unmountOnExit
       timeout={{ enter: 0, exit: 300 }}
     >
-      <div className="modal" onClick={props.onClose}>
-        <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-          <div className="modal-header">
-            <h4 className="modal-title font-semibold text-xl">{props.title}</h4>
+      <div className="modal-kemitraan" onClick={props.onClose}>
+        <div
+          className="modal-content-kemitraan"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <div className="modal-header-kemitraan">
+            <h4 className="modal-title-kemitraan font-semibold text-xl">
+              {props.title}
+            </h4>
             <FiX
               onClick={props.onClose}
               className="hover:cursor-pointer"
               size={30}
             />
           </div>
-          <div className="modal-body">{props.children}</div>
-          <div className="modal-footer">
+          <div className="modal-body-kemitraan">{props.children}</div>
+          <div className="modal-footer-kemitraan">
             {/* <button onClick={props.onClose} className="button">
               Close
             </button> */}

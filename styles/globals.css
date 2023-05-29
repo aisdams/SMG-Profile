@@ -80,7 +80,7 @@ body {
   background-color: #fff;
   transition: all 0.3s ease-in-out;
   border-radius: 5px;
-  /* // transform: translateY(-200px); */
+  transform: translateY(-200px);
 }
 
 .modal.enter-done .modal-content {
@@ -102,6 +102,71 @@ body {
 }
 
 .modal-body {
+  padding: 10px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-kemitraan {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.modal-header-kemitraan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-kemitraan.enter-done {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.modal-kemitraan.exit-kemitraan {
+  opacity: 0;
+}
+
+.modal-content-kemitraan {
+  width: 60%;
+  height: 90%;
+  overflow: auto;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  transform: translateY(-200px);
+}
+
+.modal-kemitraan.enter-done .modal-content-kemitraan {
+  transform: translateY(0);
+}
+
+.modal.exit .modal-content-kemitraan {
+  /* // transform: translateY(-200px); */
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-header-kemitraan,
+.modal-footer-kemitraan {
+  padding: 10px;
+}
+
+.modal-title-kemitraan {
+  margin: 0;
+}
+
+.modal-body-kemitraan {
   padding: 10px;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;

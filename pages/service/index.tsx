@@ -26,7 +26,7 @@ export default function Service() {
     {
       name: 'Trucking',
       description:
-        'adalah layanan pengiriman paket atau High value Shipment secara door to door dengan Full Trucking Load atau Less Trucking Load yang disesuaikan dengan kebutuhan pelanggan.',
+        'adalah layanan pengiriman paket atau High Value Shipment secara door to door dengan Full Trucking Load atau Less Trucking Load yang disesuaikan dengan kebutuhan pelanggan.',
       image: Bg4,
     },
     {

@@ -13,19 +13,19 @@ import 'swiper/css/effect-fade';
 const slides = [
   {
     title: 'EKSPEDISI 1 KOTA 1 HARGA',
-    desc: 'LinkExpress memberikan tarif flat untuk setiap kabupaten dan kota meskipun ada',
+    desc: 'LINKEXPRESS memberikan tarif flat untuk setiap Kabupaten dan Kota meskipun ada',
     desc2: 'perbedaan jarak yang signifikan antar kecamatan',
     image: Bg1,
   },
   {
     title: 'RAJANYA REMOTE AREA',
-    desc: 'LinkExpress menjangkau 514 kota/kabupaten ke seluruh Indonesia',
+    desc: 'LINKEXPRESS menjangkau 514 Kota/Kabupaten ke seluruh Indonesia',
     desc2: 'dan bisa kirim barang hingga kepelosok daerah',
     image: Bg2,
   },
   {
     title: 'TOP PRIORITY GUARANTEE',
-    desc: 'LinkExpress bertanggung jawab pada semua pengiriman kami,',
+    desc: 'LINKEXPRESS bertanggung jawab pada semua pengiriman kami,',
     desc2:
       'berkomitmen untuk selalu menjaga keamanan barang demi kepuasan pelanggan',
     image: Bg3,
