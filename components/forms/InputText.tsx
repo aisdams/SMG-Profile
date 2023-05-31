@@ -55,7 +55,7 @@ export default function InputText({
           id={name}
           placeholder={placeholder}
           className={classNames(
-            'input input-bordered w-full mt-5 p-2 border rounded',
+            'input input-bordered w-full p-2 border rounded',
             !nofieldState && fieldState.error && 'input-error',
             !nofieldState &&
               !auth &&

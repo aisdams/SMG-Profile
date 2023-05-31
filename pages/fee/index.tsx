@@ -245,7 +245,7 @@ export default function Fee() {
               <InputText
                 name="weight"
                 placeholder="Berat (KG)"
-                className="w-full h-full border-2 border-gray-300 rounded-md px-3 py-2 outline-none"
+                className="w-full h-full border-2 border-gray-300 rounded-md px-3 py-2 outline-none mt-5"
               />
 
               <div className="flex">
