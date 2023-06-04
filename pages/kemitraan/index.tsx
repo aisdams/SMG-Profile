@@ -14,11 +14,12 @@ import { FormProvider, useForm } from 'react-hook-form';
 import InputText from '@components/forms/InputText';
 import InputSelect from '@components/forms/InputSelect';
 import { useMutation, useQuery } from '@tanstack/react-query';
-import axios from 'axios';
 import InputSelectDynamic from '@components/forms/InputSelectDynamic';
 import { getCoverageAreaByOrigin } from '@apis/coverage';
 import { addKemitraan } from '@apis/kemitraan';
 import Swal from 'sweetalert2';
+
+import ModalConfirm from './ModalConfirm';
 
 export default function Kemitraan() {
   const data = [
@@ -76,6 +77,7 @@ export default function Kemitraan() {
     email: '',
     info_kemitraan: '',
   };
+
   const methods = useForm({
     mode: 'all',
     defaultValues,
@@ -84,6 +86,7 @@ export default function Kemitraan() {
 
   const [file, setFile] = useState(null);
   const [showBanner, setShowBanner] = useState(false);
+  const [showConfirm, setShowConfirm] = useState(false);
   const [modalData, setModalData] = useState<any>([]);
   const handleModalBanner = (data: any) => {
     console.log(data);
@@ -100,6 +103,9 @@ export default function Kemitraan() {
   };
   const handleModalFormClose = () => {
     setShowForm(false);
+  };
+  const handleModalConfirmClose = () => {
+    setShowConfirm(false);
   };
 
   const [cityInputValue, setCityInputValue] = useState('');
@@ -240,7 +246,10 @@ export default function Kemitraan() {
             KLIK
           </div>
           <div className="flex justify-center">
-            <button className="bg-[#1abbdb] text-2xl font-semibold rounded-lg text-white px-10 py-2 mt-5 hover:shadow-xl">
+            <button
+              onClick={() => setShowConfirm(!showConfirm)}
+              className="bg-[#1abbdb] text-2xl font-semibold rounded-lg text-white px-10 py-2 mt-5 hover:shadow-xl"
+            >
               KONFIRMASI PEMBAYARAN
             </button>
           </div>
@@ -405,6 +414,12 @@ export default function Kemitraan() {
           </FormProvider>
         </div>
       </Modal>
+
+      <ModalConfirm
+        showConfirm={showConfirm}
+        onClose={handleModalConfirmClose}
+      />
+
       <Footer />
     </div>
   );

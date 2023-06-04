@@ -7,6 +7,7 @@ import Topbar from '@components/topbar';
 
 import '@/styles/globals.css';
 import 'aos/dist/aos.css';
+import 'react-datepicker/dist/react-datepicker.css';
 
 export default function App({ Component, pageProps }: AppProps) {
   const qc = new QueryClient({
