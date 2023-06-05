@@ -77,7 +77,7 @@ export default function About() {
           Indonesia dengan keunggulan harga yang super kompetitif melalui
           tagline kami Satu Kota Satu Harga.
         </div>
-        <div className="flex mt-5 text-xl justify-between relative">
+        <div className="flex mt-5 text-xl justify-between relative xxxl:h-[20rem]">
           <div className="font-semibold w-full lg:w-5/12" data-aos="fade-right">
             Kami juga akan terus mengembangkan layanan LinkExpress berbasis
             platform teknologi, sehingga menjadikan bisnis logistik akan semakin
@@ -87,7 +87,7 @@ export default function About() {
             karena itu semboyan kami adalah Expression Of IT.
           </div>
           <div
-            className="w-6/12 absolute right-0 bottom-0 hidden xl:block lg:block"
+            className="w-6/12 absolute bottom-0 right-0 hidden xl:block lg:block h-full"
             data-aos="fade-left"
           >
             <Image
@@ -98,7 +98,8 @@ export default function About() {
                 width: '100%',
                 height: '100%',
                 // objectFit: 'cover',
-                objectPosition: 'top 100px right 0',
+                // padding
+                // objectPosition: 'top 100px right 0',
               }}
             />
           </div>

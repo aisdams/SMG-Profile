@@ -44,11 +44,6 @@ const ModalBasic = (props: Props) => {
             />
           </div>
           <div className="modal-body">{props.children}</div>
-          <div className="modal-footer">
-            {/* <button onClick={props.onClose} className="button">
-              Close
-            </button> */}
-          </div>
         </div>
       </div>
     </CSSTransition>

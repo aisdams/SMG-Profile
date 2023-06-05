@@ -18,8 +18,13 @@ import InputSelectDynamic from '@components/forms/InputSelectDynamic';
 import { getCoverageAreaByOrigin } from '@apis/coverage';
 import { addKemitraan } from '@apis/kemitraan';
 import Swal from 'sweetalert2';
+import { format } from 'date-fns';
+import { id } from 'date-fns/locale';
 
 import ModalConfirm from './ModalConfirm';
+
+export const dateYearMonthFormat = (date: string) =>
+  format(new Date(date), 'yyyy-MM-dd', { locale: id });
 
 export default function Kemitraan() {
   const data = [
@@ -87,7 +92,9 @@ export default function Kemitraan() {
   const [file, setFile] = useState(null);
   const [showBanner, setShowBanner] = useState(false);
   const [showConfirm, setShowConfirm] = useState(false);
+  const [showInvoice, setShowInvoice] = useState(false);
   const [modalData, setModalData] = useState<any>([]);
+  const [modalDataInvoice, setModalDataInvoice] = useState<any>([]);
   const handleModalBanner = (data: any) => {
     console.log(data);
     setModalData(data);
@@ -106,6 +113,9 @@ export default function Kemitraan() {
   };
   const handleModalConfirmClose = () => {
     setShowConfirm(false);
+  };
+  const handleModalInvoiceClose = () => {
+    setShowInvoice(false);
   };
 
   const [cityInputValue, setCityInputValue] = useState('');
@@ -129,11 +139,9 @@ export default function Kemitraan() {
       reset();
       setAgree(false);
       setFile(null);
-      Swal.fire({
-        icon: 'success',
-        title: 'Berhasil',
-        text: e.message,
-      });
+      console.log(e.data.invoice);
+      setModalDataInvoice(e.data.invoice);
+      setShowInvoice(true);
     },
   });
 
@@ -200,7 +208,7 @@ export default function Kemitraan() {
         </div>
       </div>
       <div className="my-20 px-10 xl:px-40 lg:px-28">
-        <div className="bg-[#1abbdb] w-full flex flex-col py-4 text-2xl font-semibold text-white">
+        <div className="bg-[#1abbdb] w-full flex flex-col py-4 text-xl md:text-2xl font-semibold text-white">
           <div className="text-center">
             Pembayaran keanggotaan LinkShop dapat melalui transfer bank ke
             rekening berikut:
@@ -241,14 +249,14 @@ export default function Kemitraan() {
           ))}
         </div>
         <div className="mt-10 flex flex-col">
-          <div className="flex justify-center text-2xl font-semibold">
+          <div className="flex justify-center text-xl md:text-2xl font-semibold text-center">
             Jika telah melakukan transfer/pembayaran kemitraan LinkShop silahkan
             KLIK
           </div>
           <div className="flex justify-center">
             <button
               onClick={() => setShowConfirm(!showConfirm)}
-              className="bg-[#1abbdb] text-2xl font-semibold rounded-lg text-white px-10 py-2 mt-5 hover:shadow-xl"
+              className="bg-[#1abbdb] text-xl md:text-2xl font-semibold rounded-lg text-white px-10 py-2 mt-5 hover:shadow-xl"
             >
               KONFIRMASI PEMBAYARAN
             </button>
@@ -274,7 +282,7 @@ export default function Kemitraan() {
         />
         <div className="flex justify-center mt-5 mb-[10px]">
           <button
-            className="bg-[#1abbdb] text-2xl font-semibold rounded-lg text-white px-10 py-2 hover:shadow-xl"
+            className="bg-[#1abbdb] text-xl md:text-2xl font-semibold rounded-lg text-white px-10 py-2 hover:shadow-xl"
             onClick={hanleModalForm}
           >
             DAFTAR SEKARANG
@@ -412,6 +420,55 @@ export default function Kemitraan() {
               </button>
             </div>
           </FormProvider>
+        </div>
+      </Modal>
+      <Modal
+        title="Invoice"
+        onClose={handleModalInvoiceClose}
+        show={showInvoice}
+      >
+        <div className="bg-[#bdbdbd] flex justify-center font-bold text-xl py-3">
+          Invoice
+        </div>
+        <div className="mt-5">
+          <label className="font-semibold">Nomor Pendafataran</label>
+          <input
+            type="text"
+            className="w-full p-2 rounded-lg border border-gray-300"
+            value={modalDataInvoice.nomor}
+            disabled
+          />
+        </div>
+        <div className="mt-5">
+          <label className="font-semibold">Jumlah Tagihan</label>
+          <input
+            type="text"
+            className="w-full p-2 rounded-lg border border-gray-300"
+            value={modalDataInvoice.harga}
+            disabled
+          />
+        </div>
+        <div className="mt-5">
+          <label className="font-semibold">Jenis Pembayaran</label>
+          <input
+            type="text"
+            className="w-full p-2 rounded-lg border border-gray-300"
+            value={modalDataInvoice.jenis_bayar}
+            disabled
+          />
+        </div>
+        <div className="mt-5">
+          <label className="font-semibold">Batas Pembayaran</label>
+          <input
+            type="text"
+            className="w-full p-2 rounded-lg border border-gray-300"
+            value={
+              modalDataInvoice.jatuh_tempo
+                ? dateYearMonthFormat(modalDataInvoice.jatuh_tempo)
+                : '-'
+            }
+            disabled
+          />
         </div>
       </Modal>
 
