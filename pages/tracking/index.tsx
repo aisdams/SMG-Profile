@@ -3,6 +3,7 @@ import { getTrackingPublic } from '@apis/tracking';
 import { useMutation } from '@tanstack/react-query';
 import { format } from 'date-fns';
 import { id } from 'date-fns/locale';
+import ModalBasic from '@/components/modal/modalBasic';
 
 import Image from 'next/image';
 import Bg1 from 'public/tracking/aaa.png';
@@ -44,6 +45,20 @@ export default function Tracking() {
       handleSearchResi();
     }
   };
+
+  const [show, setShow] = useState(false);
+  const handleModalClose = () => {
+    setShow(false);
+  };
+
+  const [dataResi, setDataResi] = useState<any>([]); // [dataResi, setDataResi
+  const [history, setHistory] = useState<any>([]); // [history, setHistory
+  const handleModalOpen = (e: any) => {
+    setShow(true);
+    setDataResi(e);
+    setHistory(e.track_history);
+  };
+
   return (
     <div className="">
       <div className="relative">
@@ -142,7 +157,10 @@ export default function Tracking() {
                       {item.status}
                     </td>
                     <td className="border border-gray-300 px-5 py-2 text-center">
-                      <button className="bg-[#1abbdb] text-white px-5 py-2 rounded-md">
+                      <button
+                        className="bg-[#1abbdb] text-white px-5 py-2 rounded-md"
+                        onClick={() => handleModalOpen(item)}
+                      >
                         Detail
                       </button>
                     </td>
@@ -153,6 +171,75 @@ export default function Tracking() {
           </div>
         )}
       </div>
+
+      <ModalBasic
+        title="Tracking Detail"
+        onClose={handleModalClose}
+        show={show}
+      >
+        <div className="grid md:grid-cols-2 mobileS:grid-cols-1">
+          <div className="sm:mr-4">
+            <div className="rounded-lg px-7 py-5 text-sm shadow-lg">
+              <div className="mt-2 grid grid-cols-2 sm:grid-cols-1 sm:mt-3">
+                <div className="mt-2">
+                  Tanggal Pengiriman <br />
+                  {dataResi?.p_date
+                    ? dateYearMonthFormat(dataResi?.p_date)
+                    : ''}
+                </div>
+                <div className="mt-2">
+                  Tujuan <br />
+                  {dataResi?.destination}
+                </div>
+              </div>
+              <div className="mt-2 grid grid-cols-2 sm:grid-cols-1 sm:mt-3">
+                <div className="">
+                  Pengirim <br />
+                  {dataResi?.p_shipper_name}
+                </div>
+                <div className="">
+                  Penerima <br />
+                  {dataResi?.p_consignee_name}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="mobileL:mt-10 md:mt-0">
+            <div className="rounded-lg px-10 py-5 shadow-lg h-96 overflow-auto">
+              <ol className="relative border-l border-gray-200 dark:border-gray-700">
+                {history.map((e: any, i: any) => (
+                  <li key={i} className="mb-10 ml-4">
+                    <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700" />
+                    <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                      {/* {dateHourFormat(e.date)} */}
+                    </time>
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                      {e.status}
+                    </h3>
+                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                      {e.location}
+                    </p>
+                  </li>
+                ))}
+                {history.map((e: any, i: any) => (
+                  <li key={i} className="mb-10 ml-4">
+                    <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700" />
+                    <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                      {/* {dateHourFormat(e.date)} */}
+                    </time>
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                      {e.status}
+                    </h3>
+                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                      {e.location}
+                    </p>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </div>
+        </div>
+      </ModalBasic>
 
       <Footer />
     </div>
