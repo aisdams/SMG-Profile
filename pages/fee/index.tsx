@@ -215,7 +215,7 @@ export default function Fee() {
       <div className="my-20 px-10 xl:px-40 lg:px-28">
         <FormProvider {...methods}>
           <div className="flex flex-col items-center text-xl">
-            <div className="w-[600px]">
+            <div className="">
               <div>
                 <InputSelectDynamic
                   name="city_code"
