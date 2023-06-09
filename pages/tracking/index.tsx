@@ -213,17 +213,17 @@ export default function Tracking() {
           </div>
           <div className="mobileS:mt-10 md:mt-0">
             <div className="rounded-lg px-10 py-5 shadow-lg h-96 overflow-auto">
-              <ol className="relative border-l border-gray-200 dark:border-gray-700">
+              <ol className="relative border-l border-gray-200">
                 {history.map((e: any, i: any) => (
                   <li key={i} className="mb-10 ml-4">
-                    <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700" />
-                    <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200" />
+                    <time className="mb-1 text-sm font-normal leading-none text-gray-400">
                       {e.date ? dateHourFormat(e.date) : ''}
                     </time>
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                    <h3 className="text-lg font-semibold text-gray-900">
                       {e.status}
                     </h3>
-                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                    <p className="mb-4 text-base font-normal text-gray-500">
                       {e.location}
                     </p>
                   </li>
