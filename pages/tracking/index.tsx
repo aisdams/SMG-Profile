@@ -13,6 +13,9 @@ import Footer from '@components/footer';
 export const dateYearMonthFormat = (date: string) =>
   format(new Date(date), 'yyyy-MM-dd', { locale: id });
 
+export const dateHourFormat = (date: string) =>
+  format(new Date(date), 'dd-MMMM-yyyy HH:mm', { locale: id });
+
 export default function Tracking() {
   const searchRef = useRef<HTMLInputElement>(null);
   const [data, setData] = useState<any>([]);
@@ -180,38 +183,42 @@ export default function Tracking() {
         <div className="grid md:grid-cols-2 mobileS:grid-cols-1">
           <div className="sm:mr-4">
             <div className="rounded-lg px-7 py-5 text-sm shadow-lg">
-              <div className="mt-2 grid grid-cols-2 sm:grid-cols-1 sm:mt-3">
+              <div className="mt-2 grid grid-cols-2 sm:grid-cols-1">
                 <div className="mt-2">
-                  Tanggal Pengiriman <br />
+                  <span className="font-semibold">Tanggal Pengiriman</span>
+                  <br />
                   {dataResi?.p_date
                     ? dateYearMonthFormat(dataResi?.p_date)
                     : ''}
                 </div>
                 <div className="mt-2">
-                  Tujuan <br />
+                  <span className="font-semibold"> Tujuan </span>
+                  <br />
                   {dataResi?.destination}
                 </div>
               </div>
-              <div className="mt-2 grid grid-cols-2 sm:grid-cols-1 sm:mt-3">
-                <div className="">
-                  Pengirim <br />
+              <div className="grid grid-cols-2 sm:grid-cols-1">
+                <div className="mt-2">
+                  <span className="font-semibold"> Pengirim </span>
+                  <br />
                   {dataResi?.p_shipper_name}
                 </div>
-                <div className="">
-                  Penerima <br />
+                <div className="mt-2">
+                  <span className="font-semibold"> Penerima </span>
+                  <br />
                   {dataResi?.p_consignee_name}
                 </div>
               </div>
             </div>
           </div>
-          <div className="mobileL:mt-10 md:mt-0">
+          <div className="mobileS:mt-10 md:mt-0">
             <div className="rounded-lg px-10 py-5 shadow-lg h-96 overflow-auto">
               <ol className="relative border-l border-gray-200 dark:border-gray-700">
                 {history.map((e: any, i: any) => (
                   <li key={i} className="mb-10 ml-4">
                     <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700" />
                     <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                      {/* {dateHourFormat(e.date)} */}
+                      {e.date ? dateHourFormat(e.date) : ''}
                     </time>
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                       {e.status}
