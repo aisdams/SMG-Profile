@@ -30,7 +30,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <QueryClientProvider client={qc}>
       <Head>
         <title>LINKEXPRESS</title>
-        <meta name="description" content="LINKEXPRESS" />
+        <meta name="LINKEXPRESS" content="LINKEXPRESS" />
       </Head>
       <Topbar />
       <Component {...pageProps} />
