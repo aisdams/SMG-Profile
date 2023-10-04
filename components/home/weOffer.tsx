@@ -42,7 +42,7 @@ export default function WeOffer() {
   ];
 
   return (
-    <div className="h-full bg-[#1abbdb]">
+    <div className="h-full bg-[#B52067]">
       <div className="py-16 px-10 xl:px-40 lg:px-28">
         <div className="text-4xl font-bold text-white" data-aos="fade-down">
           What We Offer?

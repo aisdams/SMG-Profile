@@ -34,7 +34,7 @@ export default function Footer() {
           }}
         />
       </div>
-      <div className="bg-[#1abbdb] px-[1rem] md:px-[2rem] lg:px-[5rem] xl:px-[7rem]">
+      <div className="bg-[#B52067] px-[1rem] md:px-[2rem] lg:px-[5rem] xl:px-[7rem]">
         <div className="flex flex-col items-center md:flex-row justify-between py-12 text-white">
           <div className="flex flex-col text-center md:text-left">
             <div className="font-semibold">
@@ -49,7 +49,7 @@ export default function Footer() {
               href={'https://wa.me/6285810558522'}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center border-2 text-xl rounded-full py-3 px-6 font-bold cursor-pointer hover:bg-white hover:text-[#1abbdb]"
+              className="flex items-center border-2 text-xl rounded-full py-3 px-6 font-bold cursor-pointer hover:bg-white hover:text-[#B52067]"
             >
               <Image
                 src={Bg3}

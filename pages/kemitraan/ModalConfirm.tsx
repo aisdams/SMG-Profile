@@ -192,7 +192,7 @@ export default function ModalConfirm({ showConfirm, onClose }: Props) {
           <div className="flex justify-center">
             <button
               className={classNames(
-                'bg-[#1abbdb] text-xl font-semibold rounded-lg text-white px-14 py-2 mt-5 hover:shadow-xl',
+                'bg-[#B52067] text-xl font-semibold rounded-lg text-white px-14 py-2 mt-5 hover:shadow-xl',
                 !agree && 'opacity-50 cursor-not-allowed'
               )}
               type="submit"

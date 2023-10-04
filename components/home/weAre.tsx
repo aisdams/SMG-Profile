@@ -168,7 +168,7 @@ export default function WeAre() {
         className=""
         style={{
           background:
-            'linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #1abbdb 50%, #1abbdb 100%)',
+            'linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #B52067 50%, #B52067 100%)',
         }}
       >
         <div className="mt-20 px-10 xl:px-40 lg:px-28">

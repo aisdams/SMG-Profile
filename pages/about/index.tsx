@@ -117,8 +117,8 @@ export default function About() {
                       'w-full p-[2rem] pr-[4rem] text-sm font-medium leading-5 text-black bg-[#eeeeee] relative',
                       'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
                       selected
-                        ? '!bg-[#1abbdb] !text-white shadow mobileM:!text-xl'
-                        : 'text-black hover:bg-[#1abbdb] hover:text-white',
+                        ? '!bg-[#B52067] !text-white shadow mobileM:!text-xl'
+                        : 'text-black hover:bg-[#B52067] hover:text-white',
                       item === 'Vision & Mission' && 'md:left-[21%]',
                       item === 'Link GO!' && 'mt-5 md:mt-0',
                       item === 'Company Value' && 'md:right-[21%] mt-5 md:mt-0'

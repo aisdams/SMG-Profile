@@ -176,7 +176,8 @@ export default function Kemitraan() {
             // scrolling="no"
             // marginheight="0"
             // marginwidth="0"
-            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Kawasan%20Niaga%20Citra%20Grand.%20R15-17,%20RT.002/RW.008,%20Jatisampurna,%20Kec.%20Jatisampurna,%20Kota%20Bks,%20Jawa%20Barat%2017434+(LinkExpress)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            src="https://www.google.com/maps/embed/v1/place?q=LinkExpress,+RT.002/RW.008,+Jatisampurna,+Bekasi,+West+Java,+Indonesia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+            // src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1982.6044839252481!2d106.94002!3d-6.366997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xff989a705829b3a2!2sPT.%20INSPIRY%20INDONESIA%20KONSULTAN!5e0!3m2!1sen!2sus!4v1665826439901!5m2!1sen!2sus'
           ></iframe>
         </div>
       </div>

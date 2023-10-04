@@ -277,7 +277,7 @@ export default function Fee() {
             </div>
             <div>
               <button
-                className="bg-red-500 text-white px-10 py-2 rounded-md mt-5"
+                className="bg-red-500 text-white px-10 py-2 rounded-md mt-5 hover:bg-red-600"
                 onClick={handleSubmit(onSubmit)}
               >
                 Cek Harga

@@ -38,8 +38,8 @@ export default function Topbar() {
             <Link href="/">
               <div
                 className={classNames(
-                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
-                  isActive === '/' && 'border-b-4 border-[#1abbdb]'
+                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#B52067] hover:text-white ',
+                  isActive === '/' && 'border-b-4 border-[#B52067]'
                 )}
               >
                 <span>Home</span>
@@ -48,8 +48,8 @@ export default function Topbar() {
             <Link href="/about">
               <div
                 className={classNames(
-                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
-                  isActive === '/about' && 'border-b-4 border-[#1abbdb]'
+                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#B52067] hover:text-white ',
+                  isActive === '/about' && 'border-b-4 border-[#B52067]'
                 )}
               >
                 <span>About Us</span>
@@ -58,8 +58,8 @@ export default function Topbar() {
             <Link href="/service">
               <div
                 className={classNames(
-                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
-                  isActive === '/service' && 'border-b-4 border-[#1abbdb]'
+                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#B52067] hover:text-white ',
+                  isActive === '/service' && 'border-b-4 border-[#B52067]'
                 )}
               >
                 <span>Service</span>
@@ -68,8 +68,8 @@ export default function Topbar() {
             <Link href="/fee">
               <div
                 className={classNames(
-                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
-                  isActive === '/fee' && 'border-b-4 border-[#1abbdb]'
+                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#B52067] hover:text-white ',
+                  isActive === '/fee' && 'border-b-4 border-[#B52067]'
                 )}
               >
                 <span>Cek Ongkir</span>
@@ -78,8 +78,8 @@ export default function Topbar() {
             <Link href="/tracking">
               <div
                 className={classNames(
-                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
-                  isActive === '/tracking' && 'border-b-4 border-[#1abbdb]'
+                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#B52067] hover:text-white ',
+                  isActive === '/tracking' && 'border-b-4 border-[#B52067]'
                 )}
               >
                 <span>Tracking</span>
@@ -88,8 +88,8 @@ export default function Topbar() {
             <Link href="/kemitraan">
               <div
                 className={classNames(
-                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
-                  isActive === '/kemitraan' && 'border-b-4 border-[#1abbdb]'
+                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#B52067] hover:text-white ',
+                  isActive === '/kemitraan' && 'border-b-4 border-[#B52067]'
                 )}
               >
                 <span>Kemitraan</span>
@@ -98,8 +98,8 @@ export default function Topbar() {
             <Link href="/contact">
               <div
                 className={classNames(
-                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#1abbdb] hover:text-white ',
-                  isActive === '/contact' && 'border-b-4 border-[#1abbdb]'
+                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#B52067] hover:text-white ',
+                  isActive === '/contact' && 'border-b-4 border-[#B52067]'
                 )}
               >
                 <span>Contact</span>
@@ -132,7 +132,7 @@ export default function Topbar() {
                             <span
                               className={`${
                                 isActive === '/'
-                                  ? 'bg-[#1abbdb] text-white'
+                                  ? 'bg-[#B52067] text-white'
                                   : 'text-gray-900'
                               } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                             >
@@ -147,7 +147,7 @@ export default function Topbar() {
                             <span
                               className={`${
                                 isActive === '/about'
-                                  ? 'bg-[#1abbdb] text-white'
+                                  ? 'bg-[#B52067] text-white'
                                   : 'text-gray-900'
                               } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                             >
@@ -162,7 +162,7 @@ export default function Topbar() {
                             <span
                               className={`${
                                 isActive === '/service'
-                                  ? 'bg-[#1abbdb] text-white'
+                                  ? 'bg-[#B52067] text-white'
                                   : 'text-gray-900'
                               } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                             >
@@ -177,7 +177,7 @@ export default function Topbar() {
                             <span
                               className={`${
                                 isActive === '/fee'
-                                  ? 'bg-[#1abbdb] text-white'
+                                  ? 'bg-[#B52067] text-white'
                                   : 'text-gray-900'
                               } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                             >
@@ -192,7 +192,7 @@ export default function Topbar() {
                             <span
                               className={`${
                                 isActive === '/tracking'
-                                  ? 'bg-[#1abbdb] text-white'
+                                  ? 'bg-[#B52067] text-white'
                                   : 'text-gray-900'
                               } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                             >
@@ -207,7 +207,7 @@ export default function Topbar() {
                             <span
                               className={`${
                                 isActive === '/kemitraan'
-                                  ? 'bg-[#1abbdb] text-white'
+                                  ? 'bg-[#B52067] text-white'
                                   : 'text-gray-900'
                               } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                             >
@@ -222,7 +222,7 @@ export default function Topbar() {
                             <span
                               className={`${
                                 isActive === '/contact'
-                                  ? 'bg-[#1abbdb] text-white'
+                                  ? 'bg-[#B52067] text-white'
                                   : 'text-gray-900'
                               } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                             >

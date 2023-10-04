@@ -25,7 +25,7 @@ export default function FooterHome() {
               href={'https://wa.me/6285810558522'}
               target="_blank"
               rel="noreferrer"
-              className="flex bg-[#1abbdb] text-white px-5 py-2 rounded-full cursor-pointer hover:shadow-xl"
+              className="flex bg-[#B52067] text-white px-5 py-2 rounded-full cursor-pointer hover:shadow-xl"
             >
               Hubungi Kami
               <Image

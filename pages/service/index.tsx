@@ -6,6 +6,7 @@ import Bg4 from 'public/service/4.png';
 import Bg5 from 'public/service/5.png';
 import Bg6 from 'public/service/6.png';
 import Bg7 from 'public/service/7.png';
+import Bg8 from 'public/service/8.jpeg';
 
 import Footer from '@components/footer';
 
@@ -46,6 +47,12 @@ export default function Service() {
       description:
         'Warehousing adalah layanan yang menawarkan jasa penyimpanan barang berbentuk gudang.',
       image: Bg7,
+    },
+    {
+      name: 'WMS (Warehouse Management System)',
+      description:
+        'WMS (Warehouse Management System) Merupakan sistem operasional yang berfokus pada aktivitas gudang perusahaan yang terintegrasi dan terdigitalisasi dengan sistem (web-based).',
+      image: Bg8,
     },
   ];
   return (

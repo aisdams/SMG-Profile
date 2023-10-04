@@ -113,7 +113,7 @@ export default function Tracking() {
               onKeyDown={enterField}
             />
             <button
-              className="bg-[#1abbdb] text-white px-5 py-2 rounded-md mt-5 md:mt-0 md:ml-5"
+              className="bg-[#B52067] text-white px-5 py-2 rounded-md mt-5 md:mt-0 md:ml-5"
               onClick={handleSearchResi}
             >
               LACAK
@@ -161,7 +161,7 @@ export default function Tracking() {
                     </td>
                     <td className="border border-gray-300 px-5 py-2 text-center">
                       <button
-                        className="bg-[#1abbdb] text-white px-5 py-2 rounded-md"
+                        className="bg-[#B52067] text-white px-5 py-2 rounded-md"
                         onClick={() => handleModalOpen(item)}
                       >
                         Detail
