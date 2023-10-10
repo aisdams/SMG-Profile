@@ -1,53 +1,53 @@
 import Image from 'next/image';
 import Bg1 from 'public/kemitraan/1.png';
-import Bg2 from 'public/service/2.png';
-import Bg3 from 'public/service/3.png';
-import Bg4 from 'public/service/4.png';
-import Bg5 from 'public/service/5.png';
-import Bg6 from 'public/service/6.png';
-import Bg7 from 'public/service/7.png';
+// import Bg2 from 'public/service/2.png';
+// import Bg3 from 'public/service/3.png';
+// import Bg4 from 'public/service/4.png';
+// import Bg5 from 'public/service/5.png';
+// import Bg6 from 'public/service/6.png';
+// import Bg7 from 'public/service/7.png';
 
 import Footer from '@components/footer';
 
 export default function Kemitraan() {
-  const data = [
-    {
-      name: 'Reguler',
-      description:
-        'adalah layanan pengiriman atau paket door to door dengan moda laut dan darat yang berfokus pada biaya yang lebih efisien dengan tetap memberikan kepastian waktu pengiriman.',
-      image: Bg2,
-    },
-    {
-      name: 'Express',
-      description:
-        'adalah layanan pengiriman atau paket door to door dengan waktu yang cepat. Sebagian besar moda yang digunakan adalah pesawat udara.',
-      image: Bg3,
-    },
-    {
-      name: 'Trucking',
-      description:
-        'adalah layanan pengiriman paket atau High value Shipment secara door to door dengan Full Trucking Load atau Less Trucking Load yang disesuaikan dengan kebutuhan pelanggan.',
-      image: Bg4,
-    },
-    {
-      name: 'Container',
-      description:
-        'Container adalah layanan pengiriman paket atau High Value Shipment secara door to door dengan Full Container Load ataupun Less Container Load yang disesuaikan dengan kebutuhan pelanggan.',
-      image: Bg5,
-    },
-    {
-      name: 'EXIM (Export Import) and Custom Clearence',
-      description:
-        'adalah layanan pengiriman baik export maupun import door to door container maupun kg-base, serta layanan custom clearance.',
-      image: Bg6,
-    },
-    {
-      name: 'Warehousing',
-      description:
-        'Warehousing adalah layanan yang menawarkan jasa penyimpanan barang berbentuk gudang.',
-      image: Bg7,
-    },
-  ];
+  // const data = [
+  //   {
+  //     name: 'Reguler',
+  //     description:
+  //       'adalah layanan pengiriman atau paket door to door dengan moda laut dan darat yang berfokus pada biaya yang lebih efisien dengan tetap memberikan kepastian waktu pengiriman.',
+  //     image: Bg2,
+  //   },
+  //   {
+  //     name: 'Express',
+  //     description:
+  //       'adalah layanan pengiriman atau paket door to door dengan waktu yang cepat. Sebagian besar moda yang digunakan adalah pesawat udara.',
+  //     image: Bg3,
+  //   },
+  //   {
+  //     name: 'Trucking',
+  //     description:
+  //       'adalah layanan pengiriman paket atau High value Shipment secara door to door dengan Full Trucking Load atau Less Trucking Load yang disesuaikan dengan kebutuhan pelanggan.',
+  //     image: Bg4,
+  //   },
+  //   {
+  //     name: 'Container',
+  //     description:
+  //       'Container adalah layanan pengiriman paket atau High Value Shipment secara door to door dengan Full Container Load ataupun Less Container Load yang disesuaikan dengan kebutuhan pelanggan.',
+  //     image: Bg5,
+  //   },
+  //   {
+  //     name: 'EXIM (Export Import) and Custom Clearence',
+  //     description:
+  //       'adalah layanan pengiriman baik export maupun import door to door container maupun kg-base, serta layanan custom clearance.',
+  //     image: Bg6,
+  //   },
+  //   {
+  //     name: 'Warehousing',
+  //     description:
+  //       'Warehousing adalah layanan yang menawarkan jasa penyimpanan barang berbentuk gudang.',
+  //     image: Bg7,
+  //   },
+  // ];
   return (
     <div className="">
       <div className="relative">
@@ -143,8 +143,8 @@ export default function Kemitraan() {
             <div>
               <div className="font-bold text-xl">Kantor pusat</div>
               <div className="text-gray-600">
-                Ruko Kawasan Niaga Citra Grand Blok R15-17, Jl. Alternatif
-                Cibubur
+                Citra Grand Cibubur CBD, Blok FR01 No.18 , Jatirangga,
+                Jatisampurna, Bekasi
               </div>
             </div>
             <div className="mt-4">
@@ -168,7 +168,7 @@ export default function Kemitraan() {
             </div>
           </div>
         </div>
-        <div className="flex xl:flex-row lg:flex-row md:flex-row mobileS:flex-col mt-10">
+        {/* <div className="flex xl:flex-row lg:flex-row md:flex-row mobileS:flex-col mt-10">
           <iframe
             width="100%"
             height="500"
@@ -179,7 +179,7 @@ export default function Kemitraan() {
             src="https://www.google.com/maps/embed/v1/place?q=LinkExpress,+RT.002/RW.008,+Jatisampurna,+Bekasi,+West+Java,+Indonesia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
             // src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1982.6044839252481!2d106.94002!3d-6.366997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xff989a705829b3a2!2sPT.%20INSPIRY%20INDONESIA%20KONSULTAN!5e0!3m2!1sen!2sus!4v1665826439901!5m2!1sen!2sus'
           ></iframe>
-        </div>
+        </div> */}
       </div>
 
       <Footer />
