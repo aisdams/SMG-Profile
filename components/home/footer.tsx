@@ -114,7 +114,7 @@ export default function FooterHome() {
           <div className="w-full">
             <div className="font-bold mt-5 xl:mt-0 lg:mt-0">Head Office</div>
             <div className="font-semibold mt-0 xl:mt-5 lg:mt-5">
-              Citra Grand Cibubur CBD, Blok FR01 No.18 , Jatirangga,
+              Citra Grand Cibubur CBD, Blok FR 01 No.18 , Jatirangga,
               Jatisampurna, Bekasi
             </div>
             <div className="font-semibold mt-2">+62 857 1889 3310</div>
