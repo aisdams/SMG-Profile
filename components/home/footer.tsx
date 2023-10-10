@@ -57,8 +57,8 @@ export default function FooterHome() {
             />
             <div className="font-semibold mt-2 xl:mt-5 lg:mt-5">
               Jasa pengiriman yang <br /> menjangkau 514 <br /> kota/kabupaten
-              di seluruh <br /> Indonesia dengan menawarkan keunggulan 1 kota 1
-              harga.
+              di seluruh <br /> Indonesia dengan <br /> menawarkan keunggulan
+              <br /> 1 kota 1 harga.
             </div>
           </div>
           <div className="w-full">
