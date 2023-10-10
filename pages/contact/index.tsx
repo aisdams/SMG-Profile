@@ -143,8 +143,8 @@ export default function Kemitraan() {
             <div>
               <div className="font-bold text-xl">Kantor pusat</div>
               <div className="text-gray-600">
-                Kawasan Niaga Citra Grand. R15-17, RT.002/RW.008, Jatisampurna,
-                Kec. Jatisampurna, Kota Bks, Jawa Barat 17434
+                Ruko Kawasan Niaga Citra Grand Blok R15-17, Jl. Alternatif
+                Cibubur
               </div>
             </div>
             <div className="mt-4">
