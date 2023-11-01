@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { getCoverageAreaByDestination } from '@apis/coverage';
+// import { getCoverageAreaByDestination } from '@apis/coverage';
+import { getPriceByDestination } from '@apis/price';
 import { getService } from '@apis/service';
 import { getPrice } from '@apis/price';
 import { useMutation, useQuery } from '@tanstack/react-query';
@@ -103,7 +104,7 @@ export default function Fee() {
   const citiesQuery = useQuery(
     ['query', cityInputValue],
     () =>
-      getCoverageAreaByDestination({
+      getPriceByDestination({
         destination: cityInputValue,
       }),
     {
@@ -160,6 +161,7 @@ export default function Fee() {
       city_code: data.city_code,
       product: data.product,
       weight: String(weightOrVolume),
+      price_list: 'PRICE LIST LINKSHOP',
     };
 
     delete data.length;
