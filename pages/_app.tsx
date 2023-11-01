@@ -4,6 +4,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Head from 'next/head';
 import Aos from 'aos';
 import Topbar from '@components/topbar';
+import TawkTo from '@components/widget/tawk-to';
 
 import '@/styles/globals.css';
 import 'aos/dist/aos.css';
@@ -32,6 +33,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>LINKEXPRESS</title>
         <meta name="LINKEXPRESS" content="LINKEXPRESS" />
       </Head>
+      <TawkTo />
       <Topbar />
       <Component {...pageProps} />
     </QueryClientProvider>
