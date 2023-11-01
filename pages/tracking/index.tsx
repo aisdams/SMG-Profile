@@ -4,6 +4,7 @@ import { useMutation } from '@tanstack/react-query';
 import { format } from 'date-fns';
 import { id } from 'date-fns/locale';
 import ModalBasic from '@/components/modal/modalBasic';
+import Link from 'next/link';
 
 import Image from 'next/image';
 import Bg1 from 'public/tracking/aaa.png';
@@ -22,6 +23,9 @@ export default function Tracking() {
 
   const trackingMutation = useMutation(getTrackingPublic, {
     onSuccess: (res) => {
+      if (data.some((item: any) => item.receipt_no === res.receipt_no)) {
+        return console.log('data sudah ada');
+      }
       setData((prev: any) => [res, ...prev]);
     },
     onError: (err) => {
@@ -36,9 +40,9 @@ export default function Tracking() {
     if (!input) {
       return console.log('input kosong');
     }
-    if (data.some((item: any) => item.receipt_no === input)) {
-      return console.log('data sudah ada');
-    }
+    // if (data.some((item: any) => item.receipt_no === input)) {
+    //   return console.log('data sudah ada');
+    // }
 
     return trackingMutation.mutate(input);
   };
@@ -120,6 +124,21 @@ export default function Tracking() {
             </button>
           </div>
         </div>
+        {trackingMutation.isError && (
+          <div className="flex justify-center mt-12">
+            <div className="bg-red-100 text-red-500 px-5 py-3 rounded-md">
+              Nomor resi tidak ditemukan, <br /> silahkan hubungi kami untuk
+              infomasi lebih lanjut.{' '}
+              <Link
+                className="hover:underline"
+                href={'https://wa.me/628159990229'}
+                target="_blank"
+              >
+                Hubungi Kami
+              </Link>
+            </div>
+          </div>
+        )}
         {data.length > 0 && (
           <div className="mt-20 overflow-auto">
             <table className="table-auto w-full overscroll-auto	">
