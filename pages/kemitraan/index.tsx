@@ -208,7 +208,7 @@ export default function Kemitraan() {
         </div>
       </div>
       <div className="my-20 px-10 xl:px-40 lg:px-28">
-        <div className="bg-[#B52067] w-full flex flex-col py-4 text-xl md:text-2xl font-semibold text-white">
+        <div className="bg-blueTwo w-full flex flex-col py-4 text-xl md:text-2xl font-semibold text-white">
           <div className="text-center">
             Pembayaran keanggotaan LinkShop dapat melalui transfer bank ke
             rekening berikut:
@@ -239,7 +239,7 @@ export default function Kemitraan() {
               />
               <div
                 className={classNames(
-                  'text-center font-semibold text-xl py-4 hover:bg-[#B52067] cursor-pointer',
+                  'text-center font-semibold text-xl py-4 hover:bg-blueTwo cursor-pointer',
                   item.status ? '' : 'cursor-not-allowed'
                 )}
               >
@@ -256,7 +256,7 @@ export default function Kemitraan() {
           <div className="flex justify-center">
             <button
               onClick={() => setShowConfirm(!showConfirm)}
-              className="bg-[#B52067] text-xl md:text-2xl font-semibold rounded-lg text-white px-10 py-2 mt-5 hover:shadow-xl"
+              className="bg-blueTwo text-xl md:text-2xl font-semibold rounded-lg text-white px-10 py-2 mt-5 hover:shadow-xl"
             >
               KONFIRMASI PEMBAYARAN
             </button>
@@ -282,7 +282,7 @@ export default function Kemitraan() {
         />
         <div className="flex justify-center mt-5 mb-[10px]">
           <button
-            className="bg-[#B52067] text-xl md:text-2xl font-semibold rounded-lg text-white px-10 py-2 hover:shadow-xl"
+            className="bg-blueTwo text-xl md:text-2xl font-semibold rounded-lg text-white px-10 py-2 hover:shadow-xl"
             onClick={hanleModalForm}
           >
             DAFTAR SEKARANG
@@ -409,7 +409,7 @@ export default function Kemitraan() {
             <div className="flex justify-center">
               <button
                 className={classNames(
-                  'bg-[#B52067] text-xl font-semibold rounded-lg text-white px-14 py-2 mt-5 hover:shadow-xl',
+                  'bg-blueTwo text-xl font-semibold rounded-lg text-white px-14 py-2 mt-5 hover:shadow-xl',
                   !agree && 'opacity-50 cursor-not-allowed'
                 )}
                 type="submit"

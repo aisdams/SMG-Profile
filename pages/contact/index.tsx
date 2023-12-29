@@ -143,8 +143,8 @@ export default function Kemitraan() {
             <div>
               <div className="font-bold text-xl">Kantor pusat</div>
               <div className="text-gray-600">
-                Citra Grand Cibubur CBD, Blok FR01 No.18 , Jatirangga,
-                Jatisampurna, Bekasi
+                Citra Grand Cibubur CBD Jl Citra Grand Cibubur II Blok AR 18 &
+                19, Kota Bks, Jawa Barat 17435
               </div>
             </div>
             <div className="mt-4">
@@ -176,7 +176,8 @@ export default function Kemitraan() {
             // scrolling="no"
             // marginheight="0"
             // marginwidth="0"
-            src="https://www.google.com/maps/embed/v1/place?q=PT.+LinkExpress+Cibubur+(Head+Office)&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.0999430995835!2d106.92495551418419!3d-6.381099564191246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6994a6f5c560ff%3A0x98afbe4373b0317a!2sPT%20Sarana%20Mulya%20Logistik!5e0!3m2!1sid!2sid!4v1637824863378!5m2!1sid!2sid"'
+            // src="https://www.google.com/maps/embed/v1/place?q=PT.+LinkExpress+Cibubur+(Head+Office)&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
             // src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1982.6044839252481!2d106.94002!3d-6.366997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xff989a705829b3a2!2sPT.%20INSPIRY%20INDONESIA%20KONSULTAN!5e0!3m2!1sen!2sus!4v1665826439901!5m2!1sen!2sus'
           ></iframe>
         </div>

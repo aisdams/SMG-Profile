@@ -38,8 +38,8 @@ export default function Topbar() {
             <Link href="/">
               <div
                 className={classNames(
-                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#B52067] hover:text-white ',
-                  isActive === '/' && 'border-b-4 border-[#B52067]'
+                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-blueTwo hover:text-white ',
+                  isActive === '/' && 'border-b-4 border-[#0B416D]'
                 )}
               >
                 <span>Home</span>
@@ -48,48 +48,48 @@ export default function Topbar() {
             <Link href="/about">
               <div
                 className={classNames(
-                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#B52067] hover:text-white ',
-                  isActive === '/about' && 'border-b-4 border-[#B52067]'
+                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-blueTwo hover:text-white ',
+                  isActive === '/about' && 'border-b-4 border-[#0B416D]'
                 )}
               >
                 <span>About Us</span>
               </div>
             </Link>
-            <Link href="/service">
+            <Link href="/product&service">
               <div
                 className={classNames(
-                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#B52067] hover:text-white ',
-                  isActive === '/service' && 'border-b-4 border-[#B52067]'
+                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-blueTwo hover:text-white ',
+                  isActive === '/service' && 'border-b-4 border-[#0B416D]'
                 )}
               >
-                <span>Service</span>
+                <span>Product & Service </span>
               </div>
             </Link>
-            <Link href="/fee">
+            {/* <Link href="/fee">
               <div
                 className={classNames(
-                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#B52067] hover:text-white ',
-                  isActive === '/fee' && 'border-b-4 border-[#B52067]'
+                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-blueTwo hover:text-white ',
+                  isActive === '/fee' && 'border-b-4 border-[#0B416D]'
                 )}
               >
                 <span>Cek Ongkir</span>
               </div>
-            </Link>
-            <Link href="/tracking">
+            </Link> */}
+            {/* <Link href="/tracking">
               <div
                 className={classNames(
-                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#B52067] hover:text-white ',
-                  isActive === '/tracking' && 'border-b-4 border-[#B52067]'
+                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-blueTwo hover:text-white ',
+                  isActive === '/tracking' && 'border-b-4 border-[#0B416D]'
                 )}
               >
                 <span>Tracking</span>
               </div>
-            </Link>
+            </Link> */}
             <Link href="/kemitraan">
               <div
                 className={classNames(
-                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#B52067] hover:text-white ',
-                  isActive === '/kemitraan' && 'border-b-4 border-[#B52067]'
+                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-blueTwo hover:text-white ',
+                  isActive === '/kemitraan' && 'border-b-4 border-[#0B416D]'
                 )}
               >
                 <span>Kemitraan</span>
@@ -98,8 +98,8 @@ export default function Topbar() {
             <Link href="/contact">
               <div
                 className={classNames(
-                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-[#B52067] hover:text-white ',
-                  isActive === '/contact' && 'border-b-4 border-[#B52067]'
+                  'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-blueTwo hover:text-white ',
+                  isActive === '/contact' && 'border-b-4 border-[#0B416D]'
                 )}
               >
                 <span>Contact</span>
@@ -132,7 +132,7 @@ export default function Topbar() {
                             <span
                               className={`${
                                 isActive === '/'
-                                  ? 'bg-[#B52067] text-white'
+                                  ? 'bg-blueTwo text-white'
                                   : 'text-gray-900'
                               } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                             >
@@ -147,7 +147,7 @@ export default function Topbar() {
                             <span
                               className={`${
                                 isActive === '/about'
-                                  ? 'bg-[#B52067] text-white'
+                                  ? 'bg-blueTwo text-white'
                                   : 'text-gray-900'
                               } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                             >
@@ -162,7 +162,7 @@ export default function Topbar() {
                             <span
                               className={`${
                                 isActive === '/service'
-                                  ? 'bg-[#B52067] text-white'
+                                  ? 'bg-blueTwo text-white'
                                   : 'text-gray-900'
                               } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                             >
@@ -171,13 +171,13 @@ export default function Topbar() {
                           </Link>
                         )}
                       </Menu.Item>
-                      <Menu.Item>
+                      {/* <Menu.Item>
                         {() => (
                           <Link href="/fee">
                             <span
                               className={`${
                                 isActive === '/fee'
-                                  ? 'bg-[#B52067] text-white'
+                                  ? 'bg-blueTwo text-white'
                                   : 'text-gray-900'
                               } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                             >
@@ -185,14 +185,14 @@ export default function Topbar() {
                             </span>
                           </Link>
                         )}
-                      </Menu.Item>
+                      </Menu.Item> */}
                       <Menu.Item>
                         {() => (
                           <Link href="/tracking">
                             <span
                               className={`${
                                 isActive === '/tracking'
-                                  ? 'bg-[#B52067] text-white'
+                                  ? 'bg-blueTwo text-white'
                                   : 'text-gray-900'
                               } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                             >
@@ -207,7 +207,7 @@ export default function Topbar() {
                             <span
                               className={`${
                                 isActive === '/kemitraan'
-                                  ? 'bg-[#B52067] text-white'
+                                  ? 'bg-blueTwo text-white'
                                   : 'text-gray-900'
                               } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                             >
@@ -222,7 +222,7 @@ export default function Topbar() {
                             <span
                               className={`${
                                 isActive === '/contact'
-                                  ? 'bg-[#B52067] text-white'
+                                  ? 'bg-blueTwo text-white'
                                   : 'text-gray-900'
                               } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                             >

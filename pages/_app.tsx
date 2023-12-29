@@ -42,8 +42,8 @@ export default function App({ Component, pageProps }: AppProps) {
                     {page_path: window.location.pathname,});`}
       </Script>
       <Head>
-        <title>LINKEXPRESS</title>
-        <meta name="LINKEXPRESS" content="LINKEXPRESS" />
+        <title>SARANA MULYA GRAFIKA</title>
+        <meta name="SARANA MULYA GRAFIKA" content="SARANA MULYA GRAFIKA" />
       </Head>
       <TawkTo />
       <Topbar />

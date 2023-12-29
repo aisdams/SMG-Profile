@@ -10,45 +10,60 @@ import Bg6 from 'public/weOffer/6.png';
 export default function WeOffer() {
   const data = [
     {
-      name: 'Reguler',
-      desc: 'Layanan pengiriman atau paket door to door dengan moda laut dan darat yang berfokus pada biaya yang lebih efisien dengan tetap memberikan kepastian waktu pengiriman.',
-      img: Bg1,
-    },
-    {
-      name: 'Express',
-      desc: 'Layanan pengiriman atau paket door to door dengan waktu yang cepat. Sebagian besar moda yang digunakan adalah pesawat udara.',
+      name: 'Company Profile',
+      desc: 'Jasa pembuatan company profile baik dalam bentuk cetak maupun video. Layanan yang kami berikan berupa ide untuk konten dalam company profile, design untuk versi cetak, copywriting, storyboard, dan editing untuk versi video. ',
       img: Bg2,
     },
     {
-      name: 'Container',
-      desc: 'Layanan pengiriman paket atau High Value Shipment secara door to door dengan Full Container Load ataupun Less Container Load yang disesuaikan dengan kebutuhan pelanggan.',
-      img: Bg3,
-    },
-    {
-      name: 'Trucking',
-      desc: 'Layanan pengiriman paket atau High value Shipment secara door to door dengan Full Trucking Load atau Less Trucking Load yang disesuaikan dengan kebutuhan pelanggan.',
-      img: Bg4,
-    },
-    {
-      name: 'Exim',
-      desc: 'Layanan pengiriman baik export maupun import door to door container maupun kg-base, serta layanan custom clearance.',
+      name: 'Sistem Operasional',
+      desc: 'Jasa pembuatan operational management system untuk sarana penunjang suatu operasional perusahaan. Kami melayani full customize dimana disesuaikan dengan alur atau proses bisnis di perusahaan Anda',
       img: Bg5,
     },
     {
-      name: 'Warehouse',
-      desc: 'Layanan yang menawarkan jasa penyimpanan barang berbentuk gudang.',
+      name: 'Social Media',
+      desc: 'Jasa pengurusan social media bisnis diantaranya Instagram,Facebook, Youtube, TikTok, dan lainnya. Yang kami berikanadalah berupa pengurusan design stories & feeds, post stories &feeds, copywriting captions, popular hashtags, managecomments & direct messages, dan social Media Ads.',
+      img: Bg4,
+    },
+    {
+      name: 'Website',
+      desc: 'Jasa pembuatan website mulai dari design website (Elemen,Gambar, Warna, Font, Grafik), copywriting Bahasa indonesia &inggris, development & maintenance website, kustomisasi domain,HTML, CSS & JavaScript, serta gratis 5 Artikel Blog.',
+      img: Bg5,
+    },
+    {
+      name: 'Booth',
+      desc: 'Kami menyediakan layanan pembuatan stan, mulai dari desain hingga konstruksi. Kami mendesain dan menciptakan stan pameran yang berkualitas dan eksklusif.',
+      img: Bg5,
+    },
+    {
+      name: 'Merchandise',
+      desc: 'Jasa pembuatan merchandise bisnis atau perusahaan seperti mug, lanyard, notebook, puplen, kipas, mousepad, kaos, dan sebagainya mulai dari designing hingga proses cetak',
       img: Bg6,
+    },
+    {
+      name: 'Percetakan',
+      desc: 'Kami menyediakan layanan offset printing dan digital printing. Produk yang dapat kami cetak baik offset maupun digital printing berupa : o Buku, Katalog, Buku panduan, Majalah, Buku menu, Agenda o Nota, Faktur, Invoice o Kop Surat, Amplop, Kartu, Undangan, dll. ',
+      img: Bg3,
+    },
+    {
+      name: 'Furniture, komputer, Stationery',
+      desc: 'Penyediaan kebutuhan alat tulis kantor, perangkat keras komputer, dan furniture kantor. ',
+      img: Bg5,
+    },
+    {
+      name: 'Design',
+      desc: 'Jasa pembuatan flyer, brochure, product catalog, dan sejenisnya. Kami memberikan fasilitas designing, copywriting dan printing jika dibutuhkan. Kami memberikan permintaan kustomisasi terhadap design, warna, model, hingga bentuknya. Kami juga menawarkan jasa promosi untuk event-event seperti pameran,  conference, training, dan sebagainya.',
+      img: Bg3,
     },
   ];
 
   return (
-    <div className="h-full bg-[#B52067]">
+    <div className="h-full bg-blueTwo">
       <div className="py-16 px-10 xl:px-40 lg:px-28">
         <div className="text-4xl font-bold text-white" data-aos="fade-down">
           What We Offer?
         </div>
         <div
-          className="grid xl:grid-cols-6 lg:grid-cols-3 md:grid-cols-3 mobileL:grid-cols-2 mt-10 gap-4 justify-around"
+          className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-3 mobileL:grid-cols-2 mt-10 gap-4 justify-around"
           data-aos="fade-up"
         >
           {data.map((item, index) => (

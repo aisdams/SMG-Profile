@@ -25,7 +25,7 @@ export default function FooterHome() {
               href={'https://wa.me/628159990229'}
               target="_blank"
               rel="noreferrer"
-              className="flex bg-[#B52067] text-white px-5 py-2 rounded-full cursor-pointer hover:shadow-xl"
+              className="flex bg-blueTwo text-white px-5 py-2 rounded-full cursor-pointer hover:shadow-xl"
             >
               Hubungi Kami
               <Image
@@ -38,7 +38,7 @@ export default function FooterHome() {
                 }}
                 className="mx-2"
               />
-              0815-9990-229
+              +62 21 22815019
             </Link>
           </div>
         </div>
@@ -114,15 +114,15 @@ export default function FooterHome() {
           <div className="w-full">
             <div className="font-bold mt-5 xl:mt-0 lg:mt-0">Head Office</div>
             <div className="font-semibold mt-0 xl:mt-5 lg:mt-5">
-              Citra Grand Cibubur CBD, Blok FR 01 No.18 , Jatirangga,
-              Jatisampurna, Bekasi
+              Citra Grand Cibubur CBD Jl Citra Grand Cibubur II Blok AR 18 & 19,
+              Kota Bks, Jawa Barat 17435
             </div>
             <div className="font-semibold mt-2">+62 857 1889 3310</div>
           </div>
         </div>
       </div>
       <div className="bg-[#6a6a6a] text-[white] text-center">
-        © LinkExpress Powered by SML- All Rights Reserved 2023
+        © Sarana Mulya Grafika Powered by SML- All Rights Reserved 2023
       </div>
     </div>
   );

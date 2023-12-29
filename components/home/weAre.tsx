@@ -47,18 +47,23 @@ export default function WeAre() {
           Who We Are?
         </div>
         <div className="flex">
-          <div className="w-full xl:w-5/12 z-[1]" data-aos="fade-right">
+          <div
+            className="w-full xl:w-5/12 z-[1] text-justify"
+            data-aos="fade-right"
+          >
             <div className="text-base font-semibold mt-5 relative xl:w-[700px] z-[1]">
-              LinkExpress yang merupakan sister company dari Sarana Mulya
-              Logistic, memberikan warna tersendiri dalam layanan Logistik &
-              Sarana Mulya Logistik bagi masyarakat Indonesia dengan keunggulan
-              harga yang super kompetitif melalui tagline kami Satu Kota Satu
-              Harga.
+              Sarana Mulya Grafika merupakan perusahaan yang berpengalaman dan
+              mempunyai sumber jaringan yang luas untuk membantu memasarkan
+              produk melalui media promosi yang terbaik. Dengan mewujudkan visi
+              dan misi kami, kami selalu mengembangkan sumber daya yang kreatif,
+              terampil, dan berkompeten untuk dapat memberikan kualitas terbaik
+              bagi setiap pelanggan kami.
             </div>
             <div className="text-base font-semibold mt-5 relative xl:w-[700px] z-[1]">
-              LINKEXPRESS memberikan solusi layanan pickup di tempat dengan
-              harga hemat dan transparan (Satu Kota, Satu Harga). Cukup perlu
-              NGOPI, Anda dapat bertransaksi dengan LINKEXPRESS
+              Saat ini, Sarana Mulya Grafika juga telah didukung dengan mesin
+              teknologi maju dan terdepan. Sehingga Sarana Mulya Grafika
+              berkomitmen untuk memberikan hasil yang terbaik kepada pelanggan
+              karena kepuasan pelanggan adalah prioritas kami.
             </div>
             <div className="text-base font-semibold mt-3 relative xl:w-[650px] z-[1]">
               <div className="flex">
@@ -75,10 +80,11 @@ export default function WeAre() {
                 />
                 <div className="flex flex-col">
                   <div className="text-lg font-bold">
-                    <span className="text-2xl text-[#f35f0f]">NG</span>EKLIK
+                    <span className="text-2xl text-blueTwo">N</span>EATNESS
                   </div>
                   <div className="text-base">
-                    kunjungi website www.linkexpress.co.id
+                    Kami selalu memberikan kerapihan, ketertiban, dan
+                    kedisiplinan dalam memberikan pelayanan.
                   </div>
                 </div>
               </div>
@@ -96,11 +102,11 @@ export default function WeAre() {
                 />
                 <div className="flex flex-col">
                   <div className="text-lg font-bold">
-                    <span className="text-2xl text-[#f35f0f]">O</span>RDER
+                    <span className="text-2xl text-blueTwo">I</span>NNOVATIVE
                   </div>
                   <div className="text-base">
-                    Masukan data pengiriman baik alamat maupun berat paket untuk
-                    mengetahui estimasi biaya
+                    Kami selalu berusaha untuk meciptakan nilai tambah dan
+                    menghasilkan ide baru
                   </div>
                 </div>
               </div>
@@ -118,10 +124,11 @@ export default function WeAre() {
                 />
                 <div className="flex flex-col">
                   <div className="text-lg font-bold">
-                    <span className="text-2xl text-[#f35f0f]">P</span>ICK UP
+                    <span className="text-2xl text-blueTwo">C</span>REATIVE
                   </div>
                   <div className="text-base">
-                    Barang akan kami jemput sesuai alamat lokasi yang diberikan
+                    Kami akan selalu beradaptasi pada tren dan mendorong
+                    kreativitas tanpa batas.
                   </div>
                 </div>
               </div>
@@ -139,12 +146,13 @@ export default function WeAre() {
                 />
                 <div className="flex flex-col">
                   <div className="text-lg font-bold">
-                    <span className="text-2xl text-[#f35f0f]">I</span>DAMAN
+                    <span className="text-2xl text-blueTwo">E</span>EXCELLENCE
                     (INOVATIF DAN AMAN)
                   </div>
                   <div className="text-base">
-                    Silahkan Anda bersantai sembari NGOPI. Biarkan pelayanan
-                    kami menjadi idaman bagi Anda
+                    Kami berdedikasi dan bersedia mencapai standar tertinggi
+                    menuju pelayanan yang berkualitas. Memberikan kinerja
+                    terbaik dan hasil yang luar biasa.
                   </div>
                 </div>
               </div>
@@ -168,7 +176,7 @@ export default function WeAre() {
         className=""
         style={{
           background:
-            'linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #B52067 50%, #B52067 100%)',
+            'linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #0B416D 50%, #0B416D 100%)',
         }}
       >
         <div className="mt-20 px-10 xl:px-40 lg:px-28">

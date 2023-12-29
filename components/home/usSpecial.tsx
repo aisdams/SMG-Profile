@@ -8,28 +8,39 @@ import Bg5 from 'public/usSpecial/5.png';
 
 const data = [
   {
-    title: 'RAJANYA REMOTE AREA',
-    desc: 'Menjangkau 514 Kabupaten/Kota ke seluruh Indonesia hingga remote area',
+    title: 'Competitive price',
     img: Bg1,
   },
   {
-    title: 'RAGAM PRODUK & LAYANAN',
-    desc: 'Memiliki aneka ragam produk dan layanan mulai dari pengiriman reguler, express, trucking, dan container',
+    title: 'Various services to fulfill',
     img: Bg2,
   },
   {
-    title: 'SATU KOTA SATU HARGA',
-    desc: 'LINKEXPRESS hadir dengan tarif seragam yang sangat membantu untuk lebih berhemat',
+    title: 'Free consultation to find out your needs',
     img: Bg3,
   },
   {
-    title: 'TOP PRIORITY GUARANTEE',
-    desc: 'Program garansi yang menjamin barang dalam hal kehilangan sesuai dengan nilai barang yang hilang',
+    title: 'Experienced, reliable, and creative human resource',
     img: Bg4,
   },
   {
-    title: '40 CABANG OTONOM',
-    desc: 'Hadir di 34 provinsi dan 6 kota besar bekerja sama agen lokal sebagai cabang otonom',
+    title: 'Up to date on the latest trends',
+    img: Bg5,
+  },
+  {
+    title: 'Provide promotions that match your business characteristics ',
+    img: Bg5,
+  },
+  {
+    title: 'Up to date on the latest trends',
+    img: Bg5,
+  },
+  {
+    title: 'Provide promotions that match your business characteristics',
+    img: Bg5,
+  },
+  {
+    title: 'Using the advanced technology',
     img: Bg5,
   },
 ];
@@ -47,9 +58,12 @@ export default function UsSpecial() {
             className="flex justify-between my-2 shadow-xl"
             key={index}
           >
-            <div className="flex flex-col p-4 w-8/12 mobileL:w-full mobileM:w-full mobileS:w-full">
-              <div className="text-2xl font-bold">{item.title}</div>
-              <div>{item.desc}</div>
+            <div className="grid p-4 w-8/12 mobileL:w-full mobileM:w-full mobileS:w-full">
+              <h1 className="text-2xl font-bold">{item.title}</h1>
+              <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+                ab.
+              </div>
             </div>
             <div className="relative hidden xl:block lg:block md:block">
               <div

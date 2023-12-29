@@ -13,46 +13,58 @@ import Footer from '@components/footer';
 export default function Service() {
   const data = [
     {
-      name: 'Reguler',
+      name: 'Company Profile',
       description:
-        'adalah layanan pengiriman atau paket door to door dengan moda laut dan darat yang berfokus pada biaya yang lebih efisien dengan tetap memberikan kepastian waktu pengiriman.',
+        'Jasa pembuatan company profile baik dalam bentuk cetak maupun video. Layanan yang kami berikan berupa ide untuk konten dalam company profile, design untuk versi cetak, copywriting, storyboard, dan editing untuk versi video. ',
       image: Bg2,
     },
     {
-      name: 'Express',
+      name: 'Sistem Operasional',
       description:
-        'adalah layanan pengiriman atau paket door to door dengan waktu yang cepat. Sebagian besar moda yang digunakan adalah pesawat udara.',
-      image: Bg3,
+        'Jasa pembuatan operational management system untuk sarana penunjang suatu operasional perusahaan. Kami melayani full customize dimana disesuaikan dengan alur atau proses bisnis di perusahaan Anda',
+      image: Bg8,
     },
     {
-      name: 'Trucking',
+      name: 'Social Media',
       description:
-        'adalah layanan pengiriman paket atau High Value Shipment secara door to door dengan Full Trucking Load atau Less Trucking Load yang disesuaikan dengan kebutuhan pelanggan.',
+        'Jasa pengurusan social media bisnis diantaranya Instagram,Facebook, Youtube, TikTok, dan lainnya. Yang kami berikanadalah berupa pengurusan design stories & feeds, post stories &feeds, copywriting captions, popular hashtags, managecomments & direct messages, dan social Media Ads.',
       image: Bg4,
     },
     {
-      name: 'Container',
+      name: 'Website',
       description:
-        'Container adalah layanan pengiriman paket atau High Value Shipment secara door to door dengan Full Container Load ataupun Less Container Load yang disesuaikan dengan kebutuhan pelanggan.',
+        'Jasa pembuatan website mulai dari design website (Elemen,Gambar, Warna, Font, Grafik), copywriting Bahasa indonesia &inggris, development & maintenance website, kustomisasi domain,HTML, CSS & JavaScript, serta gratis 5 Artikel Blog.',
       image: Bg5,
     },
     {
-      name: 'EXIM (Export Import) and Custom Clearence',
+      name: 'Booth',
       description:
-        'adalah layanan pengiriman baik export maupun import door to door container maupun kg-base, serta layanan custom clearance.',
+        'Kami menyediakan layanan pembuatan stan, mulai dari desain hingga konstruksi. Kami mendesain dan menciptakan stan pameran yang berkualitas dan eksklusif.',
+      image: Bg5,
+    },
+    {
+      name: 'Merchandise',
+      description:
+        'Jasa pembuatan merchandise bisnis atau perusahaan seperti mug, lanyard, notebook, puplen, kipas, mousepad, kaos, dan sebagainya mulai dari designing hingga proses cetak',
       image: Bg6,
     },
     {
-      name: 'Warehousing',
+      name: 'Percetakan',
       description:
-        'Warehousing adalah layanan yang menawarkan jasa penyimpanan barang berbentuk gudang.',
+        'Kami menyediakan layanan offset printing dan digital printing. Produk yang dapat kami cetak baik offset maupun digital printing berupa : o Buku, Katalog, Buku panduan, Majalah, Buku menu, Agenda o Nota, Faktur, Invoice o Kop Surat, Amplop, Kartu, Undangan, dll. ',
       image: Bg7,
     },
     {
-      name: 'WMS (Warehouse Management System)',
+      name: 'Furniture, komputer, Stationery',
       description:
-        'WMS (Warehouse Management System) Merupakan sistem operasional yang berfokus pada aktivitas gudang perusahaan yang terintegrasi dan terdigitalisasi dengan sistem (web-based).',
+        'Penyediaan kebutuhan alat tulis kantor, perangkat keras komputer, dan furniture kantor. ',
       image: Bg8,
+    },
+    {
+      name: 'Design',
+      description:
+        'Jasa pembuatan flyer, brochure, product catalog, dan sejenisnya. Kami memberikan fasilitas designing, copywriting dan printing jika dibutuhkan. Kami memberikan permintaan kustomisasi terhadap design, warna, model, hingga bentuknya. Kami juga menawarkan jasa promosi untuk event-event seperti pameran,  conference, training, dan sebagainya.',
+      image: Bg3,
     },
   ];
   return (
@@ -90,7 +102,7 @@ export default function Service() {
                 textShadow: '0px 8px 4px rgba(0, 0, 0, 0.25)',
               }}
             >
-              Service
+              Product & Service
             </p>
           </div>
         </div>
@@ -125,7 +137,7 @@ export default function Service() {
                   </a>
                 </div>
               </div>
-              <div className="p-6">
+              <div className="p-6 text-justify">
                 <h5 className="text-lg font-bold mb-2">{item.name}</h5>
                 <p>{item.description}</p>
               </div>

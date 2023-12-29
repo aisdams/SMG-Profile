@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta
-          name="linkexpress"
+          name="sarana mulya grafika"
           content="A simple project starter to work with TypeScript, React, NextJS and Styled Components"
         />
         <link

@@ -65,26 +65,41 @@ export default function About() {
           }}
           data-aos="fade-right"
         />
-        <div className="mt-5 font-semibold text-xl" data-aos="fade-right">
-          Era disrupsi saat ini menjadikan setiap lini bisnis menjadi berubah
-          dengan kecepatan yang belum pernah terjadi sebelumnya. Begitu juga
-          dalam bidang logistic di Indonesia, terjadi pesaingan seru dengan
-          munculnya para pemain baru yang lebih dinamis, efisien dan visioner.
+        <div
+          className="mt-5 font-semibold text-xl text-justify"
+          data-aos="fade-right"
+        >
+          Sarana Mulya Grafika merupakan perusahaan yang bergerak dibidang
+          kreatif dan pendukung para pelaku bisnis di Indonesia untuk membangun
+          kesadaran merek dan meningkatkan level kualitas bisnis Anda. Kami
+          melayani bisnis Anda dalam hal advertising, branding, pembuatan system
+          operasional, pemenuhan kebutuhan furniture, komputer, sekaligus
+          stationery, dan percetakan. Kami dapat melakukan perencanaan,
+          perancangan, penerapan, pemenuhan, hingga percetakan menyesuaikan
+          dengan kebutuhan Anda.
         </div>
-        <div className="mt-5 font-semibold text-xl" data-aos="fade-right">
-          LinkExpress yang merupakan sister company dari Sarana Mulya Logistic,
-          memberikan warna tersendiri dalam layanan logistic bagi masyarakat
-          Indonesia dengan keunggulan harga yang super kompetitif melalui
-          tagline kami Satu Kota Satu Harga.
+        <div
+          className="mt-5 font-semibold text-xl text-justify"
+          data-aos="fade-right"
+        >
+          Sejak tahun 2021, kami memulai bisnis ini dengan berorientasi terhadap
+          mutu pelayanan terbaik seiring mengikuti perkembangan tren. Sarana
+          Mulya Grafika hadir dengan kualitas layanan yang tinggi serta didukung
+          tenaga-tenaga ahli yang terampil dan berpengalaman pada bidang kreatif
+          dan menjadi pendukung bisnis Anda, demi mengatasi tantangan persaingan
+          bisnis global ke depannya.
         </div>
-        <div className="flex mt-5 text-xl justify-between relative xxxl:h-[20rem]">
+        <div className="flex mt-5 text-xl justify-between text-justify relative xxxl:h-[20rem]">
           <div className="font-semibold w-full lg:w-5/12" data-aos="fade-right">
-            Kami juga akan terus mengembangkan layanan LinkExpress berbasis
-            platform teknologi, sehingga menjadikan bisnis logistik akan semakin
-            mudah dan terbuka untuk semua pelaku usaha. Dengan pengembangan
-            tersebut nantinya setiap orang dapat berpartisipasi dan berpartner
-            dalam bisnis logistik dengan platform teknologi LinkExpress, oleh
-            karena itu semboyan kami adalah Expression Of IT.
+            Sarana Mulya Grafika merupakan perusahaan yang berpengalaman dan
+            mempunyai sumber jaringan yang luas untuk membantu memasarkan produk
+            melalui media promosi yang terbaik. Dengan mewujudkan visi dan misi
+            kami, kami selalu mengembangkan sumber daya yang kreatif, terampil,
+            dan berkompeten untuk dapat memberikan kualitas terbaik bagi setiap
+            pelanggan kami. Saat ini, Sarana Mulya Grafika juga telah didukung
+            dengan mesin teknologi maju dan terdepan. Sehingga Sarana Mulya
+            Grafika berkomitmen untuk memberikan hasil yang terbaik kepada
+            pelanggan karena kepuasan pelanggan adalah prioritas kami.
           </div>
           <div
             className="w-6/12 absolute bottom-0 right-0 hidden xl:block lg:block h-full"
@@ -117,8 +132,8 @@ export default function About() {
                       'w-full p-[2rem] pr-[4rem] text-sm font-medium leading-5 text-black bg-[#eeeeee] relative',
                       'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
                       selected
-                        ? '!bg-[#B52067] !text-white shadow mobileM:!text-xl'
-                        : 'text-black hover:bg-[#B52067] hover:text-white',
+                        ? '!bg-blueTwo !text-white shadow mobileM:!text-xl'
+                        : 'text-black hover:bg-blueTwo hover:text-white',
                       item === 'Vision & Mission' && 'md:left-[21%]',
                       item === 'Link GO!' && 'mt-5 md:mt-0',
                       item === 'Company Value' && 'md:right-[21%] mt-5 md:mt-0'

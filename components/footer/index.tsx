@@ -34,7 +34,7 @@ export default function Footer() {
           }}
         />
       </div>
-      <div className="bg-[#B52067] px-[1rem] md:px-[2rem] lg:px-[5rem] xl:px-[7rem]">
+      <div className="bg-blueTwo px-[1rem] md:px-[2rem] lg:px-[5rem] xl:px-[7rem]">
         <div className="flex flex-col items-center md:flex-row justify-between py-12 text-white">
           <div className="flex flex-col text-center md:text-left">
             <div className="font-semibold">
@@ -49,7 +49,7 @@ export default function Footer() {
               href={'https://wa.me/628159990229'}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center border-2 text-xl rounded-full py-3 px-6 font-bold cursor-pointer hover:bg-white hover:text-[#B52067]"
+              className="flex items-center border-2 text-xl rounded-full py-3 px-6 font-bold cursor-pointer hover:bg-white hover:text-[#0B416D]"
             >
               <Image
                 src={Bg3}
@@ -61,7 +61,7 @@ export default function Footer() {
                 }}
                 className="mx-2"
               />
-              0815-9990-229
+              +62 21 22815019
             </Link>
           </div>
         </div>
@@ -137,15 +137,15 @@ export default function Footer() {
           <div className="w-full">
             <div className="font-bold mt-5 xl:mt-0 lg:mt-0">Head Office</div>
             <div className="font-semibold mt-0 xl:mt-5 lg:mt-5">
-              Citra Grand Cibubur CBD, Blok FR 01 No.18 , Jatirangga,
-              Jatisampurna, Bekasi
+              Citra Grand Cibubur CBD Jl Citra Grand Cibubur II Blok AR 18 & 19,
+              Kota Bks, Jawa Barat 17435
             </div>
             <div className="font-semibold mt-2">+62 857 1889 3310</div>
           </div>
         </div>
       </div>
       <div className="bg-[#6a6a6a] text-[white] text-center">
-        © LinkExpress Powered by SML- All Rights Reserved 2023
+        © Sarana Mulya Grafika Powered by SML- All Rights Reserved 2023
       </div>
     </div>
   );
