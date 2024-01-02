@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import Bg2 from 'public/footer/2.png';
+import Bg2 from 'public/smg-logo.png';
 import Bg3 from 'public/footer/3.png';
 import Bg4 from 'public/footer/4.png';
 import Bg5 from 'public/footer/5.png';

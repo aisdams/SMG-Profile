@@ -1,7 +1,7 @@
 // import { useState } from 'react';
 import Image from 'next/image';
 import Bg1 from 'public/about/1.png';
-import Bg2 from 'public/about/2.png';
+import Bg2 from 'public/smg-logo.png';
 import Bg3 from 'public/about/3.png';
 import Bg4 from 'public/about/4.png';
 import Bg5 from 'public/about/5.png';
@@ -60,8 +60,8 @@ export default function About() {
           priority
           alt="Picture of the author"
           style={{
-            width: '250px',
-            height: '30px',
+            width: '80px',
+            height: '90px',
           }}
           data-aos="fade-right"
         />
