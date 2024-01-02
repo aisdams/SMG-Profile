@@ -29,8 +29,8 @@ export default function Topbar() {
           <Image
             src={Bg1}
             alt="Picture of the author"
-            width="0"
-            height="40"
+            width="80"
+            height="80"
             className="pl-3 m-2 object-contain cursor-pointer"
             priority
           />

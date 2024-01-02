@@ -29,19 +29,19 @@ const data = [
   },
   {
     title: 'Provide promotions that match your business characteristics ',
-    img: Bg5,
+    img: Bg1,
   },
   {
     title: 'Up to date on the latest trends',
-    img: Bg5,
+    img: Bg2,
   },
   {
     title: 'Provide promotions that match your business characteristics',
-    img: Bg5,
+    img: Bg3,
   },
   {
     title: 'Using the advanced technology',
-    img: Bg5,
+    img: Bg4,
   },
 ];
 

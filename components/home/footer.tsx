@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import Bg1 from 'public/footer/1.png';
-import Bg2 from 'public/footer/2.png';
+import Bg2 from 'public/smg-logo.png';
 import Bg3 from 'public/footer/3.png';
 
 export default function FooterHome() {

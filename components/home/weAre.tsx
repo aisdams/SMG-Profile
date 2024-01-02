@@ -146,7 +146,7 @@ export default function WeAre() {
                 />
                 <div className="flex flex-col">
                   <div className="text-lg font-bold">
-                    <span className="text-2xl text-blueTwo">E</span>EXCELLENCE
+                    <span className="text-2xl text-blueTwo">E</span>XCELLENCE
                     (INOVATIF DAN AMAN)
                   </div>
                   <div className="text-base">
