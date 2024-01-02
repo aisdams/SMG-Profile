@@ -74,8 +74,8 @@ export default function Footer() {
               priority
               alt="Picture of the author"
               style={{
-                width: '150px',
-                height: '1500px',
+                width: '80px',
+                height: '90px',
               }}
             />
             <div className="font-semibold mt-2 xl:mt-5 lg:mt-5">
