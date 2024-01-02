@@ -17,13 +17,13 @@ export default function Document() {
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon-32x32.png"
+          href="https://thumbs2.imgbox.com/75/13/Uja4pBjw_t.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon-16x16.png"
+          href="https://thumbs2.imgbox.com/75/13/Uja4pBjw_t.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>

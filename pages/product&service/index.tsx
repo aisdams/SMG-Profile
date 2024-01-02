@@ -9,6 +9,7 @@ import Bg7 from 'public/service/7.png';
 import Bg8 from 'public/service/8.jpeg';
 
 import Footer from '@components/footer';
+import Link from 'next/link';
 
 export default function Service() {
   const data = [
@@ -115,32 +116,32 @@ export default function Service() {
               key={index}
               data-aos="zoom-in"
             >
-              <div className="flex">
-                <div
-                  className="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg m-4 w-full"
-                  data-mdb-ripple="true"
-                  data-mdb-ripple-color="light"
-                >
-                  <Image
-                    src={item.image}
-                    priority
-                    className="w-full"
-                    alt="Sample photo"
-                    width={300}
-                    height={200}
-                  />
-                  <a href="#!">
+              <Link href="#!">
+                <div className="flex">
+                  <div
+                    className="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg m-4 w-full"
+                    data-mdb-ripple="true"
+                    data-mdb-ripple-color="light"
+                  >
+                    <Image
+                      src={item.image}
+                      priority
+                      className="w-full"
+                      alt="Sample photo"
+                      width={300}
+                      height={200}
+                    />
                     <div
                       className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
                       style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}
                     ></div>
-                  </a>
+                  </div>
                 </div>
-              </div>
-              <div className="p-6 text-justify">
-                <h5 className="text-lg font-bold mb-2">{item.name}</h5>
-                <p>{item.description}</p>
-              </div>
+                <div className="p-6 text-justify">
+                  <h5 className="text-lg font-bold mb-2">{item.name}</h5>
+                  <p>{item.description}</p>
+                </div>
+              </Link>
             </div>
           ))}
         </div>

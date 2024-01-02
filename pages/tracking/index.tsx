@@ -131,7 +131,7 @@ export default function Tracking() {
               infomasi lebih lanjut.{' '}
               <Link
                 className="hover:underline"
-                href={'https://wa.me/628159990229'}
+                href={'https://wa.me/622122815019'}
                 target="_blank"
               >
                 Hubungi Kami

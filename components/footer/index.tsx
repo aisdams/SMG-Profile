@@ -46,7 +46,7 @@ export default function Footer() {
           </div>
           <div className="flex items-center mt-5 md:mt-0">
             <Link
-              href={'https://wa.me/628159990229'}
+              href={'https://wa.me/622122815019'}
               target="_blank"
               rel="noreferrer"
               className="flex items-center border-2 text-xl rounded-full py-3 px-6 font-bold cursor-pointer hover:bg-white hover:text-[#0B416D]"
@@ -79,9 +79,8 @@ export default function Footer() {
               }}
             />
             <div className="font-semibold mt-2 xl:mt-5 lg:mt-5">
-              Jasa pengiriman yang <br /> menjangkau 514 <br /> kota/kabupaten
-              di seluruh <br /> Indonesia dengan <br /> menawarkan keunggulan
-              <br /> 1 kota 1 harga.
+              Perusahaan yang bergerak dibidang kreatif dan pendukung para
+              pelaku bisnis di Indonesia.
             </div>
           </div>
           <div className="w-full">
@@ -140,7 +139,7 @@ export default function Footer() {
               Citra Grand Cibubur CBD Jl Citra Grand Cibubur II Blok AR 18 & 19,
               Kota Bks, Jawa Barat 17435
             </div>
-            <div className="font-semibold mt-2">+62 857 1889 3310</div>
+            <div className="font-semibold mt-2">+62 21 22815019</div>
           </div>
         </div>
       </div>

@@ -1,11 +1,11 @@
 version: '3'
 
 services:
-  linkx-profile:
+  smg-profile:
     build:
       #context: ../../
       dockerfile: Dockerfile
-    image: linkx-profile
-    container_name: linkx-profile
+    image: smg-profile
+    container_name: smg-profile
     ports:
       - '7007:7007'

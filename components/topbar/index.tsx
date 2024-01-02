@@ -6,7 +6,7 @@ import { Menu, Transition } from '@headlessui/react';
 import { Fragment, useEffect, useState } from 'react';
 import { HiMenu } from 'react-icons/hi';
 
-import Bg1 from 'public/topbar/1.png';
+import Bg1 from 'public/smg-logo.png';
 
 export default function Topbar() {
   const router = useRouter();
@@ -59,7 +59,8 @@ export default function Topbar() {
               <div
                 className={classNames(
                   'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-blueTwo hover:text-white ',
-                  isActive === '/service' && 'border-b-4 border-[#0B416D]'
+                  isActive === '/product&service' &&
+                    'border-b-4 border-[#0B416D]'
                 )}
               >
                 <span>Product & Service </span>
@@ -85,7 +86,7 @@ export default function Topbar() {
                 <span>Tracking</span>
               </div>
             </Link> */}
-            <Link href="/kemitraan">
+            {/* <Link href="/kemitraan">
               <div
                 className={classNames(
                   'flex items-center font-semibold h-full px-3 cursor-pointer hover:bg-blueTwo hover:text-white ',
@@ -94,7 +95,7 @@ export default function Topbar() {
               >
                 <span>Kemitraan</span>
               </div>
-            </Link>
+            </Link> */}
             <Link href="/contact">
               <div
                 className={classNames(
