@@ -75,7 +75,7 @@ export default function Footer() {
               alt="Picture of the author"
               style={{
                 width: '150px',
-                height: '20px',
+                height: '1500px',
               }}
             />
             <div className="font-semibold mt-2 xl:mt-5 lg:mt-5">

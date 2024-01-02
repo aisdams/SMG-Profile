@@ -6,7 +6,7 @@ import { Menu, Transition } from '@headlessui/react';
 import { Fragment, useEffect, useState } from 'react';
 import { HiMenu } from 'react-icons/hi';
 
-import Bg1 from 'public/smg-logo.png';
+import Bg1 from 'public/smg-logo-copy.png';
 
 export default function Topbar() {
   const router = useRouter();
@@ -29,8 +29,8 @@ export default function Topbar() {
           <Image
             src={Bg1}
             alt="Picture of the author"
-            width="80"
-            height="80"
+            width="50"
+            height="50"
             className="pl-3 m-2 object-contain cursor-pointer"
             priority
           />

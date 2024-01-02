@@ -52,7 +52,7 @@ export default function FooterHome() {
               alt="Picture of the author"
               style={{
                 width: '150px',
-                height: '20px',
+                height: '150px',
               }}
             />
             <div className="font-semibold mt-2 xl:mt-5 lg:mt-5">

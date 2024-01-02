@@ -137,7 +137,7 @@ export default function Service() {
                     ></div>
                   </div>
                 </div>
-                <div className="p-6 text-justify">
+                <div className="p-6 text-left">
                   <h5 className="text-lg font-bold mb-2">{item.name}</h5>
                   <p>{item.description}</p>
                 </div>
